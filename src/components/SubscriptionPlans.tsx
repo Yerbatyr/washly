@@ -6,51 +6,51 @@ import { Check, Sparkles, Crown, Zap } from "lucide-react";
 const SubscriptionPlans = () => {
   const plans = [
     {
-      name: "Single Wash",
+      name: "Разовая мойка",
       price: "2,500₸",
-      period: "per wash",
-      description: "Perfect for occasional cleaning",
+      period: "за мойку",
+      description: "Идеально для редкой очистки",
       icon: <Zap className="w-6 h-6" />,
       features: [
-        "Basic exterior wash",
-        "Soap & rinse",
-        "Air dry",
-        "Valid for 30 days"
+        "Базовая наружная мойка",
+        "Мыло и ополаскивание",
+        "Сушка воздухом",
+        "Действительно 30 дней"
       ],
       popular: false,
       buttonVariant: "outline" as const
     },
     {
-      name: "Premium Monthly",
+      name: "Премиум-месяц",
       price: "15,000₸",
-      period: "per month",
-      description: "Unlimited washes for regular users",
+      period: "в месяц",
+      description: "Безлимитные мойки для постоянных пользователей",
       icon: <Crown className="w-6 h-6" />,
       features: [
-        "Unlimited exterior washes",
-        "Premium soap & wax",
-        "Interior vacuum",
-        "Priority service",
-        "Mobile app access",
-        "QR code convenience"
+        "Безлимитные наружные мойки",
+        "Премиум мыло и воск",
+        "Внутренняя уборка пылесосом",
+        "Приоритетное обслуживание",
+        "Доступ к мобильному приложению",
+        "Удобство QR-кода"
       ],
       popular: true,
       buttonVariant: "hero" as const
     },
     {
-      name: "Family Plan",
+      name: "Семейный план",
       price: "25,000₸",
-      period: "per month",
-      description: "Perfect for multiple vehicles",
+      period: "в месяц",
+      description: "Идеально для нескольких автомобилей",
       icon: <Sparkles className="w-6 h-6" />,
       features: [
-        "Up to 3 vehicles",
-        "Unlimited premium washes",
-        "Interior & exterior detailing",
-        "Premium wax protection",
-        "24/7 support",
-        "Family dashboard",
-        "Referral rewards"
+        "До 3 автомобилей",
+        "Безлимитные премиум мойки",
+        "Детализация салона и экстерьера",
+        "Защита премиум воском",
+        "Поддержка 24/7",
+        "Семейная панель управления",
+        "Реферальные награды"
       ],
       popular: false,
       buttonVariant: "secondary" as const
@@ -63,13 +63,13 @@ const SubscriptionPlans = () => {
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4 px-4 py-2">
             <Sparkles className="w-4 h-4 mr-2" />
-            Flexible Pricing
+            Гибкие тарифы
           </Badge>
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-            Choose Your Perfect Plan
+            Выберите идеальный план
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From single washes to unlimited monthly subscriptions, find the plan that fits your lifestyle
+            От разовых моек до безлимитных ежемесячных подписок — найдите план, который подходит вашему образу жизни
           </p>
         </div>
 
@@ -88,7 +88,7 @@ const SubscriptionPlans = () => {
                   variant="default" 
                   className="absolute top-4 right-4 bg-gradient-primary shadow-glow"
                 >
-                  Most Popular
+                  Самый популярный
                 </Badge>
               )}
               
@@ -135,7 +135,7 @@ const SubscriptionPlans = () => {
                   size="lg" 
                   className="w-full"
                 >
-                  {plan.popular ? "Start Free Trial" : "Choose Plan"}
+                  {plan.popular ? "Начать бесплатный период" : "Выбрать план"}
                 </Button>
               </CardContent>
             </Card>
@@ -144,12 +144,12 @@ const SubscriptionPlans = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">
-            All plans include access to our network of 50+ partner stations
+            Все планы включают доступ к нашей сети из 50+ станций-партнёров
           </p>
           <div className="flex justify-center items-center space-x-6 text-xs text-muted-foreground">
-            <span>✓ No setup fees</span>
-            <span>✓ Cancel anytime</span>
-            <span>✓ 24/7 support</span>
+            <span>✓ Без платы за подключение</span>
+            <span>✓ Отмена в любое время</span>
+            <span>✓ Поддержка 24/7</span>
           </div>
         </div>
       </div>

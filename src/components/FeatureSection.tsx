@@ -5,38 +5,38 @@ const FeatureSection = () => {
   const features = [
     {
       icon: <QrCode className="w-8 h-8" />,
-      title: "QR Code Access",
-      description: "Dynamic QR codes that refresh every 60 seconds for maximum security. Simply scan and wash!",
+      title: "QR-доступ",
+      description: "Динамические QR-коды, обновляющиеся каждые 60 секунд для максимальной безопасности. Просто отсканируйте и мойтесь!",
       gradient: "from-primary to-primary-glow"
     },
     {
       icon: <MapPin className="w-8 h-8" />,
-      title: "50+ Locations",
-      description: "Find nearby stations with real-time availability, directions, and estimated wait times.",
+      title: "50+ локаций",
+      description: "Найдите ближайшие станции с информацией о доступности в реальном времени, маршрутами и ожидаемым временем ожидания.",
       gradient: "from-secondary to-green-400"
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile First",
-      description: "Seamless experience across iOS and Android with offline capabilities and push notifications.",
+      title: "Мобильное приоритет",
+      description: "Бесшовный опыт на iOS и Android с возможностями работы без интернета и push-уведомлениями.",
       gradient: "from-accent to-yellow-400"
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Secure Payments",
-      description: "Kaspi Pay integration with backup Stripe support. Your payment data is always protected.",
+      title: "Безопасные платежи",
+      description: "Интеграция с Kaspi Pay и поддержка Stripe в качестве резерва. Ваши платёжные данные всегда защищены.",
       gradient: "from-blue-500 to-cyan-400"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Lightning Fast",
-      description: "Average wash time under 15 minutes with express lanes for subscribers.",
+      title: "Молниеносно быстро",
+      description: "Среднее время мойки менее 15 минут с экспресс-полосами для подписчиков.",
       gradient: "from-purple-500 to-pink-400"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Referral Rewards",
-      description: "Earn free months by referring friends. Share the love and save money!",
+      title: "Реферальные награды",
+      description: "Зарабатывайте бесплатные месяцы, приглашая друзей. Делитесь любовью и экономьте деньги!",
       gradient: "from-indigo-500 to-blue-400"
     }
   ];
@@ -46,11 +46,11 @@ const FeatureSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-            Why Choose <span className="text-gradient-primary">ShineGo</span>?
+            Почему выбирают <span className="text-gradient-primary">ShineGo</span>?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We've reimagined car washing with cutting-edge technology, transparent pricing, 
-            and unmatched convenience across Kazakhstan.
+            Мы переосмыслили автомойку с помощью передовых технологий, прозрачного ценообразования 
+            и непревзойдённого удобства по всему Казахстану.
           </p>
         </div>
 
@@ -81,19 +81,19 @@ const FeatureSection = () => {
         <div className="mt-20 bg-gradient-to-r from-neutral-50 to-background rounded-3xl p-8 lg:p-16">
           <div className="text-center mb-12">
             <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-              How It Works
+              Как это работает
             </h3>
             <p className="text-muted-foreground">
-              Get started in minutes, wash in seconds
+              Начните за минуты, мойтесь за секунды
             </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "1", title: "Download App", desc: "Get ShineGo from App Store or Google Play" },
-              { step: "2", title: "Choose Plan", desc: "Select monthly unlimited or pay-per-wash" },
-              { step: "3", title: "Find Station", desc: "Use map to locate nearby partner stations" },
-              { step: "4", title: "Scan & Wash", desc: "Show QR code, confirm, and enjoy your wash" }
+              { step: "1", title: "Скачайте приложение", desc: "Получите ShineGo из App Store или Google Play" },
+              { step: "2", title: "Выберите план", desc: "Выберите безлимитный месячный или оплата за мойку" },
+              { step: "3", title: "Найдите станцию", desc: "Используйте карту для поиска ближайших станций-партнёров" },
+              { step: "4", title: "Сканируйте и мойтесь", desc: "Покажите QR-код, подтвердите и наслаждайтесь мойкой" }
             ].map((item, index) => (
               <div key={index} className="text-center group">
                 <div className="mb-4 relative">

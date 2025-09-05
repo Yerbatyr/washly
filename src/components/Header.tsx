@@ -19,16 +19,16 @@ const Header = () => {
           {/* Navigation - Desktop */}
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
-              How it Works
+              Как работает
             </a>
             <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
-              Stations
+              Станции
             </a>
             <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
-              Pricing
+              Тарифы
             </a>
             <a href="#" className="text-sm font-medium hover:text-primary transition-colors">
-              Partners
+              Партнёры
             </a>
           </nav>
 
@@ -45,11 +45,11 @@ const Header = () => {
             </div>
 
             <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-              Sign In
+              Войти
             </Button>
             
             <Button variant="hero" size="sm">
-              Get Started
+              Начать
             </Button>
 
             {/* Mobile Menu Button */}
