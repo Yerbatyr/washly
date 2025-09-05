@@ -26,11 +26,14 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					foreground: 'hsl(var(--secondary-foreground))',
+					hover: 'hsl(var(--secondary-hover))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -42,7 +45,8 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					foreground: 'hsl(var(--accent-foreground))',
+					hover: 'hsl(var(--accent-hover))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -51,6 +55,18 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				neutral: {
+					50: 'hsl(var(--neutral-50))',
+					100: 'hsl(var(--neutral-100))',
+					200: 'hsl(var(--neutral-200))',
+					300: 'hsl(var(--neutral-300))',
+					400: 'hsl(var(--neutral-400))',
+					500: 'hsl(var(--neutral-500))',
+					600: 'hsl(var(--neutral-600))',
+					700: 'hsl(var(--neutral-700))',
+					800: 'hsl(var(--neutral-800))',
+					900: 'hsl(var(--neutral-900))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -62,6 +78,22 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+				mono: ['ui-monospace', 'SFMono-Regular', 'monospace']
+			},
+			fontSize: {
+				'xs': ['0.8125rem', { lineHeight: '1.25rem' }],    // 13px
+				'sm': ['0.875rem', { lineHeight: '1.375rem' }],    // 14px
+				'base': ['1rem', { lineHeight: '1.5rem' }],        // 16px - Body
+				'lg': ['1.125rem', { lineHeight: '1.75rem' }],     // 18px
+				'xl': ['1.25rem', { lineHeight: '1.875rem' }],     // 20px
+				'2xl': ['1.5rem', { lineHeight: '2rem' }],         // 24px - H2
+				'3xl': ['1.875rem', { lineHeight: '2.25rem' }],    // 30px - H1
+				'4xl': ['2.25rem', { lineHeight: '2.5rem' }],      // 36px
+				'5xl': ['3rem', { lineHeight: '1' }],              // 48px
+				'6xl': ['3.75rem', { lineHeight: '1' }],           // 60px
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
