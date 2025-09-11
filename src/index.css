@@ -10,65 +10,68 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Hormozi Dark Gold Design System */
-    --background: 240 7% 4%;          /* #0A0A0B - Very Dark */
-    --foreground: 0 0% 100%;          /* #FFFFFF - White */
+    /* Modern Electric Design System */
+    --background: 222 47% 4%;         /* #0A0F1C - Deep Dark Blue */
+    --foreground: 0 0% 100%;          /* #FFFFFF - Pure White */
 
-    --card: 240 5% 11%;               /* #1C1C1E - Dark Surface */
+    --card: 220 39% 8%;               /* #1A1F2E - Dark Surface */
     --card-foreground: 0 0% 100%;
 
-    --popover: 240 4% 17%;            /* #2C2C2E - Medium Surface */
+    --popover: 218 33% 12%;           /* #252D3D - Medium Surface */
     --popover-foreground: 0 0% 100%;
 
-    --primary: 45 65% 53%;            /* #D4AF37 - Gold */
-    --primary-foreground: 240 7% 4%;
-    --primary-hover: 45 65% 58%;
-    --primary-glow: 45 75% 80%;       /* #F4E4A6 - Light Gold */
+    --primary: 268 100% 70%;          /* #B347FF - Electric Purple */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 268 100% 75%;
+    --primary-glow: 268 100% 85%;     /* Light Purple Glow */
 
-    --secondary: 240 3% 23%;          /* #3A3A3C - Light Surface */
-    --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 240 3% 28%;
+    --secondary: 173 100% 50%;        /* #00FF9F - Electric Green */
+    --secondary-foreground: 220 39% 8%;
+    --secondary-hover: 173 100% 55%;
 
-    --accent: 45 75% 80%;             /* #F4E4A6 - Light Gold */
-    --accent-foreground: 240 7% 4%;
-    --accent-hover: 45 80% 85%;
+    --accent: 195 100% 50%;           /* #00BFFF - Electric Cyan */
+    --accent-foreground: 220 39% 8%;
+    --accent-hover: 195 100% 55%;
 
-    --muted: 240 3% 23%;              /* #3A3A3C */
-    --muted-foreground: 240 2% 63%;   /* #A1A1AA - Light Gray */
+    --muted: 218 33% 12%;             /* #252D3D */
+    --muted-foreground: 220 9% 65%;   /* #9CA3AF - Cool Gray */
 
-    --destructive: 4 86% 58%;         /* Keep error red */
+    --destructive: 0 85% 65%;         /* Modern Red */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 4% 17%;             /* #2C2C2E */
-    --input: 240 4% 17%;
-    --ring: 45 65% 53%;
+    --border: 218 33% 15%;            /* #2A3441 */
+    --input: 218 33% 15%;
+    --ring: 268 100% 70%;
 
-    /* Dark Gold Neutral System */
-    --neutral-50: 45 75% 95%;        /* Light Gold tint */
-    --neutral-100: 240 2% 85%;       /* Very Light Gray */
-    --neutral-200: 240 2% 75%;       /* Light Gray */
-    --neutral-300: 240 2% 63%;       /* #A1A1AA - Light Gray */
-    --neutral-400: 240 2% 48%;       /* #71717A - Gray */
-    --neutral-500: 240 3% 33%;       /* Medium Gray */
-    --neutral-600: 240 3% 23%;       /* #3A3A3C - Light Surface */
-    --neutral-700: 240 4% 17%;       /* #2C2C2E - Medium Surface */
-    --neutral-800: 240 5% 11%;       /* #1C1C1E - Dark Surface */
-    --neutral-900: 240 7% 4%;        /* #0A0A0B - Very Dark */
+    /* Modern Neutral System */
+    --neutral-50: 220 20% 95%;       /* Very Light Cool */
+    --neutral-100: 220 14% 90%;      /* Light Cool Gray */
+    --neutral-200: 220 13% 80%;      /* Cool Gray */
+    --neutral-300: 220 9% 65%;       /* #9CA3AF - Medium Cool Gray */
+    --neutral-400: 220 9% 50%;       /* Dark Cool Gray */
+    --neutral-500: 218 11% 35%;      /* Darker Cool Gray */
+    --neutral-600: 218 20% 25%;      /* Deep Cool Gray */
+    --neutral-700: 218 33% 15%;      /* Very Deep Cool */
+    --neutral-800: 220 39% 8%;       /* Dark Surface */
+    --neutral-900: 222 47% 4%;       /* Deep Dark Blue */
 
-    /* Gold Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(45 60% 40%), hsl(45 65% 53%));     /* Dark to Main Gold */
-    --gradient-secondary: linear-gradient(135deg, hsl(240 4% 17%), hsl(240 3% 23%));   /* Dark surfaces */
-    --gradient-hero: linear-gradient(135deg, hsl(45 65% 53%) 0%, hsl(45 75% 80%) 100%); /* Gold to Light Gold */
-    --gradient-accent: linear-gradient(135deg, hsl(45 75% 80%), hsl(45 80% 90%));      /* Light gold variations */
+    /* Electric Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(268 100% 70%), hsl(195 100% 50%)); /* Purple to Cyan */
+    --gradient-secondary: linear-gradient(135deg, hsl(173 100% 50%), hsl(268 100% 70%)); /* Green to Purple */
+    --gradient-hero: linear-gradient(135deg, hsl(268 100% 70%) 0%, hsl(173 100% 50%) 50%, hsl(195 100% 50%) 100%); /* Triple Gradient */
+    --gradient-accent: linear-gradient(135deg, hsl(195 100% 50%), hsl(268 100% 85%)); /* Cyan to Light Purple */
+    --gradient-surface: linear-gradient(135deg, hsl(220 39% 8%), hsl(218 33% 12%)); /* Dark surface gradient */
 
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.3);
-    --shadow-secondary: 0 10px 30px -10px hsl(var(--secondary) / 0.3);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+    /* Electric Shadows & Glows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+    --shadow-primary: 0 0 50px hsl(268 100% 70% / 0.3), 0 0 100px hsl(268 100% 70% / 0.1);
+    --shadow-secondary: 0 0 50px hsl(173 100% 50% / 0.3), 0 0 100px hsl(173 100% 50% / 0.1);
+    --shadow-accent: 0 0 50px hsl(195 100% 50% / 0.3), 0 0 100px hsl(195 100% 50% / 0.1);
+    --shadow-glow: 0 0 40px hsl(268 100% 85% / 0.6);
+    --shadow-neon: 0 0 20px currentColor, 0 0 40px currentColor, 0 0 80px currentColor;
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -94,35 +97,35 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode uses same colors since we're already dark */
-    --background: 240 7% 4%;          
+    /* Dark mode - same as light since we're electric dark themed */
+    --background: 222 47% 4%;         
     --foreground: 0 0% 100%;          
 
-    --card: 240 5% 11%;               
+    --card: 220 39% 8%;               
     --card-foreground: 0 0% 100%;
 
-    --popover: 240 4% 17%;            
+    --popover: 218 33% 12%;           
     --popover-foreground: 0 0% 100%;
 
-    --primary: 45 65% 53%;            
-    --primary-foreground: 240 7% 4%;
-    --primary-hover: 45 65% 58%;
-    --primary-glow: 45 75% 80%;       
+    --primary: 268 100% 70%;          
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 268 100% 75%;
+    --primary-glow: 268 100% 85%;     
 
-    --secondary: 240 3% 23%;          
-    --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 240 3% 28%;
+    --secondary: 173 100% 50%;        
+    --secondary-foreground: 220 39% 8%;
+    --secondary-hover: 173 100% 55%;
 
-    --muted: 240 3% 23%;              
-    --muted-foreground: 240 2% 63%;   
+    --muted: 218 33% 12%;             
+    --muted-foreground: 220 9% 65%;   
 
-    --accent: 45 75% 80%;             
-    --accent-foreground: 240 7% 4%;
-    --accent-hover: 45 80% 85%;
+    --accent: 195 100% 50%;           
+    --accent-foreground: 220 39% 8%;
+    --accent-hover: 195 100% 55%;
 
-    --border: 240 4% 17%;             
-    --input: 240 4% 17%;
-    --ring: 45 65% 53%;
+    --border: 218 33% 15%;            
+    --input: 218 33% 15%;
+    --ring: 268 100% 70%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -180,6 +183,10 @@ All colors MUST be HSL.
     background: var(--gradient-accent);
   }
 
+  .bg-gradient-surface {
+    background: var(--gradient-surface);
+  }
+
   .shadow-primary {
     box-shadow: var(--shadow-primary);
   }
@@ -188,8 +195,25 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-secondary);
   }
 
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+
   .shadow-glow {
     box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-neon {
+    box-shadow: var(--shadow-neon);
+  }
+
+  /* Electric Effects */
+  .text-glow {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 40px currentColor;
+  }
+
+  .border-glow {
+    box-shadow: 0 0 10px currentColor;
   }
 
   .transition-smooth {
