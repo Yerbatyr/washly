@@ -12,57 +12,66 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative overflow-hidden pt-20 pb-32">
-        <div className="absolute inset-0 bg-gradient-hero opacity-5" />
+      {/* Hero Section - Hormozi Style */}
+      <section className="relative overflow-hidden pt-20 pb-32 bg-background">
+        <div className="absolute inset-0 bg-gradient-hero opacity-10" />
         <div className="container mx-auto px-4 relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-xl">
-              <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
-                <Sparkles className="w-4 h-4 mr-2" />
-                Запуск в Алматы
-              </Badge>
-              
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                <span className="text-gradient-hero">ShineGo</span>
-                <br />
-                Безлимитная мойка
-              </h1>
-              
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Подпишись один раз — мой везде. Доступ к премиальным автомойкам по всему Казахстану с революционной QR-системой.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="hero" size="lg" className="flex-1 sm:flex-none">
-                  <QrCode className="w-5 h-5 mr-2" />
-                  Начать
-                </Button>
-                <Button variant="outline" size="lg" className="flex-1 sm:flex-none">
-                  <MapPin className="w-5 h-5 mr-2" />
-                  Найти станции
-                </Button>
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Problem/Pain Hook */}
+            <Badge variant="secondary" className="mb-6 px-6 py-3 text-sm font-bold border border-primary/20">
+              <Sparkles className="w-4 h-4 mr-2" />
+              ПРЕКРАТИТЕ ПЕРЕПЛАЧИВАТЬ ЗА МОЙКУ
+            </Badge>
+            
+            {/* Main Headline - Problem Focused */}
+            <h1 className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9]">
+              Как мыть машину 
+              <span className="text-gradient-hero block">БЕЗЛИМИТНО</span>
+              за 15,000₸ в месяц
+            </h1>
+            
+            {/* Value Proposition */}
+            <p className="text-xl lg:text-2xl text-neutral-300 mb-8 font-medium max-w-3xl mx-auto">
+              Вместо того чтобы платить 2,500₸ за каждую мойку (75,000₸+ в месяц), 
+              получите <span className="text-primary font-bold">БЕЗЛИМИТНЫЙ</span> доступ к 50+ премиальным станциям
+            </p>
+
+            {/* Social Proof Numbers */}
+            <div className="grid grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
+              <div className="text-center">
+                <div className="text-4xl font-black text-primary mb-2">10К+</div>
+                <div className="text-sm text-neutral-400 uppercase tracking-wide">Довольных клиентов</div>
               </div>
-              
-              <div className="flex items-center gap-6 mt-8 text-sm text-muted-foreground">
-                <div className="flex items-center gap-1">
-                  <div className="w-2 h-2 bg-secondary rounded-full" />
-                  <span>50+ станций-партнёров</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <div className="w-2 h-2 bg-accent rounded-full" />
-                  <span>Доступно 24/7</span>
-                </div>
+              <div className="text-center">
+                <div className="text-4xl font-black text-primary mb-2">50+</div>
+                <div className="text-sm text-neutral-400 uppercase tracking-wide">Элитных станций</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-black text-primary mb-2">24/7</div>
+                <div className="text-sm text-neutral-400 uppercase tracking-wide">Доступ</div>
               </div>
             </div>
             
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-3xl blur-3xl transform rotate-6" />
-              <img
-                src={heroImage}
-                alt="Современная станция автомойки"
-                className="relative w-full h-auto rounded-3xl shadow-xl"
-              />
+            {/* Primary CTA */}
+            <div className="space-y-4 mb-8">
+              <Button variant="hero" size="xl" className="px-12 py-6 text-xl font-bold">
+                <QrCode className="w-6 h-6 mr-3" />
+                ПОЛУЧИТЬ БЕЗЛИМИТ СЕЙЧАС
+              </Button>
+              <p className="text-sm text-neutral-400">
+                ⚡ Активация за 2 минуты • 🎯 Первая мойка БЕСПЛАТНО
+              </p>
+            </div>
+
+            {/* Risk Reversal */}
+            <div className="bg-card border border-primary/20 rounded-2xl p-6 max-w-2xl mx-auto">
+              <div className="flex items-center justify-center gap-3 mb-3">
+                <Shield className="w-6 h-6 text-primary" />
+                <span className="text-lg font-bold text-primary">ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ</span>
+              </div>
+              <p className="text-neutral-300 text-sm">
+                Если не сэкономите минимум 30,000₸ в первый месяц - вернем ВСЕ деньги. Без вопросов.
+              </p>
             </div>
           </div>
         </div>
@@ -74,49 +83,91 @@ const Index = () => {
       {/* Subscription Plans */}
       <SubscriptionPlans />
 
-      {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-neutral-50">
+      {/* Problem Agitation Section */}
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Нам доверяют автовладельцы</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Присоединяйтесь к тысячам довольных клиентов, которые сделали мойку автомобиля простой
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { value: "10К+", label: "Активных подписчиков" },
-              { value: "50+", label: "Станций-партнёров" },
-              { value: "100К+", label: "Завершённых моек" },
-              { value: "4.9★", label: "Рейтинг приложения" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-gradient-primary mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-muted-foreground text-sm">{stat.label}</div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl lg:text-5xl font-black mb-8">
+              ХВАТИТ <span className="text-red-500">ВЫБРАСЫВАТЬ</span> деньги на мойку!
+            </h2>
+            
+            {/* Pain Points */}
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <div className="bg-red-950/30 border border-red-500/20 rounded-xl p-6">
+                <div className="text-red-400 text-5xl font-black mb-4">2,500₸</div>
+                <p className="text-neutral-300">за КАЖДУЮ мойку</p>
+                <p className="text-sm text-red-400 mt-2">= 75,000₸+ в месяц</p>
               </div>
-            ))}
+              
+              <div className="bg-red-950/30 border border-red-500/20 rounded-xl p-6">
+                <div className="text-red-400 text-5xl font-black mb-4">30мин</div>
+                <p className="text-neutral-300">в очередях</p>
+                <p className="text-sm text-red-400 mt-2">потраченное время</p>
+              </div>
+              
+              <div className="bg-red-950/30 border border-red-500/20 rounded-xl p-6">
+                <div className="text-red-400 text-5xl font-black mb-4">0</div>
+                <p className="text-neutral-300">гарантий качества</p>
+                <p className="text-sm text-red-400 mt-2">никто не возвращает деньги</p>
+              </div>
+            </div>
+
+            {/* Solution Intro */}
+            <div className="bg-gradient-hero p-8 rounded-3xl text-black">
+              <h3 className="text-3xl font-black mb-4">А ТЕПЕРЬ ПРЕДСТАВЬТЕ...</h3>
+              <div className="text-xl font-semibold space-y-2">
+                <p>✅ Безлимитные мойки за ФИКСИРОВАННУЮ цену</p>
+                <p>✅ Никаких очередей - QR и поехали</p>
+                <p>✅ Гарантия возврата денег</p>
+                <p>✅ 50+ элитных станций в сети</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-hero text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20" />
+      {/* Final CTA Section - Urgency */}
+      <section className="py-20 bg-gradient-hero text-black relative overflow-hidden">
         <div className="container mx-auto px-4 relative">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-              Готовы изменить свой опыт мойки автомобиля?
+          <div className="text-center max-w-4xl mx-auto">
+            {/* Urgency */}
+            <div className="bg-red-600 text-white px-6 py-3 rounded-full inline-block mb-8">
+              <span className="font-black text-lg">⚠️ ОГРАНИЧЕННОЕ ПРЕДЛОЖЕНИЕ ⚠️</span>
+            </div>
+            
+            <h2 className="text-4xl lg:text-6xl font-black mb-6 leading-tight">
+              ПОСЛЕДНИЙ ШАНС<br />
+              получить безлимит за <span className="text-5xl lg:text-7xl">15,000₸</span>
             </h2>
-            <p className="text-lg opacity-90 mb-8">
-              Присоединяйтесь к будущему автомобильного ухода с подпиской ShineGo
+            
+            <p className="text-xl lg:text-2xl mb-8 font-bold">
+              Цена поднимется до 25,000₸ уже через 7 дней!<br />
+              <span className="text-lg font-medium">Сэкономьте 120,000₸ в год - действуйте СЕЙЧАС</span>
             </p>
-            <Button variant="glass" size="xl">
-              <Zap className="w-5 h-5 mr-2" />
-              Оформить подписку
-            </Button>
+            
+            {/* CTA Stack */}
+            <div className="space-y-6">
+              <Button variant="default" size="xl" className="px-16 py-8 text-2xl font-black bg-black text-primary hover:bg-neutral-900 border-4 border-black">
+                <Zap className="w-8 h-8 mr-4" />
+                АКТИВИРОВАТЬ БЕЗЛИМИТ СЕЙЧАС
+              </Button>
+              
+              <div className="text-black/80 space-y-2">
+                <p className="font-semibold">🎯 Активация за 60 секунд</p>
+                <p className="font-semibold">💳 Безопасная оплата через Kaspi Pay</p>
+                <p className="font-semibold">🛡️ Гарантия возврата денег 30 дней</p>
+              </div>
+            </div>
+
+            {/* Testimonial Social Proof */}
+            <div className="mt-12 bg-black/10 rounded-2xl p-6 max-w-2xl mx-auto">
+              <p className="text-lg font-semibold mb-3">
+                "Экономлю 60,000₸ каждый месяц! Мою машину 3 раза в неделю и плачу как за 6 моек в обычной мойке"
+              </p>
+              <div className="text-black/80">
+                <strong>Асылбек К.</strong> • Предприниматель • ⭐⭐⭐⭐⭐
+              </div>
+            </div>
           </div>
         </div>
       </section>

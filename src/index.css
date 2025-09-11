@@ -10,56 +10,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* ShineGo Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 6.7%;
+    /* Hormozi Dark Gold Design System */
+    --background: 240 7% 4%;          /* #0A0A0B - Very Dark */
+    --foreground: 0 0% 100%;          /* #FFFFFF - White */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 6.7%;
+    --card: 240 5% 11%;               /* #1C1C1E - Dark Surface */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 6.7%;
+    --popover: 240 4% 17%;            /* #2C2C2E - Medium Surface */
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 210 79% 46%;           /* #1A73E8 - Primary Blue */
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 210 79% 41%;
-    --primary-glow: 210 79% 66%;
+    --primary: 45 65% 53%;            /* #D4AF37 - Gold */
+    --primary-foreground: 240 7% 4%;
+    --primary-hover: 45 65% 58%;
+    --primary-glow: 45 75% 80%;       /* #F4E4A6 - Light Gold */
 
-    --secondary: 145 85% 38%;         /* #00C853 - Secondary Green */
+    --secondary: 240 3% 23%;          /* #3A3A3C - Light Surface */
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 145 85% 33%;
+    --secondary-hover: 240 3% 28%;
 
-    --accent: 45 100% 51%;            /* #FFC107 - Accent Yellow */
-    --accent-foreground: 0 0% 6.7%;
-    --accent-hover: 45 100% 46%;
+    --accent: 45 75% 80%;             /* #F4E4A6 - Light Gold */
+    --accent-foreground: 240 7% 4%;
+    --accent-hover: 45 80% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 240 3% 23%;              /* #3A3A3C */
+    --muted-foreground: 240 2% 63%;   /* #A1A1AA - Light Gray */
 
-    --destructive: 4 86% 58%;         /* #E53935 - Error Red */
+    --destructive: 4 86% 58%;         /* Keep error red */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 210 79% 46%;
+    --border: 240 4% 17%;             /* #2C2C2E */
+    --input: 240 4% 17%;
+    --ring: 45 65% 53%;
 
-    /* Neutral System */
-    --neutral-50: 210 20% 98%;
-    --neutral-100: 220 14% 96%;      /* #ECEFF1 */
-    --neutral-200: 220 13% 91%;
-    --neutral-300: 220 9% 86%;
-    --neutral-400: 218 11% 65%;      /* #9AA0A6 */
-    --neutral-500: 220 9% 46%;
-    --neutral-600: 215 14% 34%;      /* #666 */
-    --neutral-700: 215 19% 27%;
-    --neutral-800: 215 28% 17%;
-    --neutral-900: 220 39% 11%;      /* #111 */
+    /* Dark Gold Neutral System */
+    --neutral-50: 45 75% 95%;        /* Light Gold tint */
+    --neutral-100: 240 2% 85%;       /* Very Light Gray */
+    --neutral-200: 240 2% 75%;       /* Light Gray */
+    --neutral-300: 240 2% 63%;       /* #A1A1AA - Light Gray */
+    --neutral-400: 240 2% 48%;       /* #71717A - Gray */
+    --neutral-500: 240 3% 33%;       /* Medium Gray */
+    --neutral-600: 240 3% 23%;       /* #3A3A3C - Light Surface */
+    --neutral-700: 240 4% 17%;       /* #2C2C2E - Medium Surface */
+    --neutral-800: 240 5% 11%;       /* #1C1C1E - Dark Surface */
+    --neutral-900: 240 7% 4%;        /* #0A0A0B - Very Dark */
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(145 85% 58%));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(45 100% 66%));
+    /* Gold Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(45 60% 40%), hsl(45 65% 53%));     /* Dark to Main Gold */
+    --gradient-secondary: linear-gradient(135deg, hsl(240 4% 17%), hsl(240 3% 23%));   /* Dark surfaces */
+    --gradient-hero: linear-gradient(135deg, hsl(45 65% 53%) 0%, hsl(45 75% 80%) 100%); /* Gold to Light Gold */
+    --gradient-accent: linear-gradient(135deg, hsl(45 75% 80%), hsl(45 80% 90%));      /* Light gold variations */
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -94,34 +94,35 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 39% 11%;
-    --foreground: 0 0% 100%;
+    /* Dark mode uses same colors since we're already dark */
+    --background: 240 7% 4%;          
+    --foreground: 0 0% 100%;          
 
-    --card: 220 39% 11%;
+    --card: 240 5% 11%;               
     --card-foreground: 0 0% 100%;
 
-    --popover: 220 39% 11%;
+    --popover: 240 4% 17%;            
     --popover-foreground: 0 0% 100%;
 
-    --primary: 210 79% 66%;
-    --primary-foreground: 220 39% 11%;
-    --primary-hover: 210 79% 71%;
-    --primary-glow: 210 79% 76%;
+    --primary: 45 65% 53%;            
+    --primary-foreground: 240 7% 4%;
+    --primary-hover: 45 65% 58%;
+    --primary-glow: 45 75% 80%;       
 
-    --secondary: 145 85% 48%;
-    --secondary-foreground: 220 39% 11%;
-    --secondary-hover: 145 85% 53%;
+    --secondary: 240 3% 23%;          
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 240 3% 28%;
 
-    --muted: 215 28% 17%;
-    --muted-foreground: 218 11% 65%;
+    --muted: 240 3% 23%;              
+    --muted-foreground: 240 2% 63%;   
 
-    --accent: 45 100% 61%;
-    --accent-foreground: 220 39% 11%;
-    --accent-hover: 45 100% 66%;
+    --accent: 45 75% 80%;             
+    --accent-foreground: 240 7% 4%;
+    --accent-hover: 45 80% 85%;
 
-    --border: 215 28% 17%;
-    --input: 215 28% 17%;
-    --ring: 210 79% 66%;
+    --border: 240 4% 17%;             
+    --input: 240 4% 17%;
+    --ring: 45 65% 53%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
