@@ -223,4 +223,27 @@ All colors MUST be HSL.
   .transition-spring {
     transition: var(--transition-spring);
   }
+
+  /* Testimonials Scrolling Animations */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .hover\:pause:hover {
+    animation-play-state: paused;
+  }
 }
