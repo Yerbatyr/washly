@@ -6,8 +6,11 @@ import heroImage from "@/assets/hero-car-wash.jpg";
 import Header from "@/components/Header";
 import SubscriptionPlans from "@/components/SubscriptionPlans";
 import FeatureSection from "@/components/FeatureSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+
 const Index = () => {
-  return <div className="min-h-screen bg-background">
+  return (
+    <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section - Hormozi Style */}
@@ -38,7 +41,7 @@ const Index = () => {
             <div className="grid grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-4xl font-black text-primary mb-2">10К+</div>
-                <div className="text-sm text-neutral-400 uppercase tracking-wide">5000+</div>
+                <div className="text-sm text-neutral-400 uppercase tracking-wide">Довольных клиентов</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-black text-primary mb-2">50+</div>
@@ -77,6 +80,9 @@ const Index = () => {
 
       {/* Features Section */}
       <FeatureSection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Subscription Plans */}
       <SubscriptionPlans />
@@ -157,115 +163,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Floating Testimonials */}
-            <div className="mt-12 relative">
-              {/* Central testimonial */}
-              <div className="bg-black/10 rounded-2xl p-6 max-w-2xl mx-auto z-10 relative animate-fade-in">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center text-white font-bold text-lg shadow-primary">
-                    АК
-                  </div>
-                  <div className="text-left">
-                    <div className="font-bold text-lg">Асылбек Казбеков</div>
-                    <div className="text-black/60 text-sm">Предприниматель</div>
-                    <div className="text-yellow-500">⭐⭐⭐⭐⭐</div>
-                  </div>
-                </div>
-                <p className="text-lg font-semibold">
-                  "Экономлю 60,000₸ каждый месяц! Мою машину 3 раза в неделю и плачу как за 6 моек в обычной мойке"
-                </p>
-              </div>
-
-              {/* Floating testimonial 1 - Top Left */}
-              <div className="absolute -top-8 -left-4 lg:-left-16 bg-white/90 backdrop-blur-sm rounded-xl p-4 max-w-xs shadow-lg animate-scale-in hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-secondary flex items-center justify-center text-white font-bold shadow-secondary">
-                    МА
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black">Марат А.</div>
-                    <div className="text-xs text-black/60">Таксист</div>
-                  </div>
-                </div>
-                <p className="text-sm text-black">"Мою 15 раз в месяц, плачу как за 6! Невероятно!"</p>
-                <div className="text-yellow-500 text-xs mt-2">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              {/* Floating testimonial 2 - Top Right */}
-              <div className="absolute -top-4 -right-4 lg:-right-20 bg-white/90 backdrop-blur-sm rounded-xl p-4 max-w-xs shadow-lg animate-fade-in delay-300 hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-accent flex items-center justify-center text-white font-bold shadow-accent">
-                    АЖ
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black">Айгерим Ж.</div>
-                    <div className="text-xs text-black/60">Менеджер</div>
-                  </div>
-                </div>
-                <p className="text-sm text-black">"QR код - это магия! 30 секунд и готово"</p>
-                <div className="text-yellow-500 text-xs mt-2">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              {/* Floating testimonial 3 - Bottom Left */}
-              <div className="absolute -bottom-8 -left-8 lg:-left-24 bg-white/90 backdrop-blur-sm rounded-xl p-4 max-w-xs shadow-lg animate-scale-in delay-500 hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold shadow-primary">
-                    ДС
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black">Даулет С.</div>
-                    <div className="text-xs text-black/60">IT директор</div>
-                  </div>
-                </div>
-                <p className="text-sm text-black">"Экономлю 80,000₸ в год. Жена тоже подключилась!"</p>
-                <div className="text-yellow-500 text-xs mt-2">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              {/* Floating testimonial 4 - Bottom Right */}
-              <div className="absolute -bottom-4 -right-8 lg:-right-28 bg-white/90 backdrop-blur-sm rounded-xl p-4 max-w-xs shadow-lg animate-fade-in delay-700 hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white font-bold shadow-secondary">
-                    ЖК
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black">Жанна К.</div>
-                    <div className="text-xs text-black/60">Врач</div>
-                  </div>
-                </div>
-                <p className="text-sm text-black">"Качество мойки как в премиуме, а цена - копейки"</p>
-                <div className="text-yellow-500 text-xs mt-2">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              {/* Floating testimonial 5 - Middle Left */}
-              <div className="absolute top-1/2 -left-12 lg:-left-32 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm rounded-xl p-4 max-w-xs shadow-lg animate-scale-in delay-200 hover:scale-105 transition-transform duration-300 hidden lg:block">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-white font-bold shadow-accent">
-                    БТ
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black">Бауржан Т.</div>
-                    <div className="text-xs text-black/60">Бизнесмен</div>
-                  </div>
-                </div>
-                <p className="text-sm text-black">"3 автомобиля - один тариф. Гениально!"</p>
-                <div className="text-yellow-500 text-xs mt-2">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              {/* Floating testimonial 6 - Middle Right */}
-              <div className="absolute top-1/2 -right-12 lg:-right-36 transform -translate-y-1/2 bg-white/90 backdrop-blur-sm rounded-xl p-4 max-w-xs shadow-lg animate-fade-in delay-600 hover:scale-105 transition-transform duration-300 hidden lg:block">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-hero flex items-center justify-center text-white font-bold shadow-glow">
-                    СН
-                  </div>
-                  <div>
-                    <div className="font-semibold text-black">Сабина Н.</div>
-                    <div className="text-xs text-black/60">Дизайнер</div>
-                  </div>
-                </div>
-                <p className="text-sm text-black">"Машина всегда чистая, а кошелек полный!"</p>
-                <div className="text-yellow-500 text-xs mt-2">⭐⭐⭐⭐⭐</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -314,6 +211,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
