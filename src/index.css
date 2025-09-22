@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ShineGo Design System - Car Wash Subscription Platform
+/* ShineGo Professional Design System - Car Wash Subscription Platform
+Professional Black, Navy & Golden Orange Color Palette
 All colors MUST be HSL.
 */
 
@@ -10,67 +11,67 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Modern Electric Design System */
-    --background: 222 47% 4%;         /* #0A0F1C - Deep Dark Blue */
+    /* Professional Color Palette Design System */
+    --background: 0 0% 0%;            /* #000000 - Pure Black */
     --foreground: 0 0% 100%;          /* #FFFFFF - Pure White */
 
-    --card: 220 39% 8%;               /* #1A1F2E - Dark Surface */
+    --card: 220 47% 16%;              /* #14213D - Dark Navy */
     --card-foreground: 0 0% 100%;
 
-    --popover: 218 33% 12%;           /* #252D3D - Medium Surface */
+    --popover: 220 47% 20%;           /* Lighter Navy for popovers */
     --popover-foreground: 0 0% 100%;
 
-    --primary: 268 100% 70%;          /* #B347FF - Electric Purple */
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 268 100% 75%;
-    --primary-glow: 268 100% 85%;     /* Light Purple Glow */
+    --primary: 43 97% 53%;            /* #FCA311 - Golden Orange */
+    --primary-foreground: 0 0% 0%;    /* Black text on orange */
+    --primary-hover: 43 97% 58%;
+    --primary-glow: 43 97% 68%;       /* Light Orange Glow */
 
-    --secondary: 173 100% 50%;        /* #00FF9F - Electric Green */
-    --secondary-foreground: 220 39% 8%;
-    --secondary-hover: 173 100% 55%;
+    --secondary: 220 47% 25%;         /* Lighter Navy for secondary */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 220 47% 30%;
 
-    --accent: 195 100% 50%;           /* #00BFFF - Electric Cyan */
-    --accent-foreground: 220 39% 8%;
-    --accent-hover: 195 100% 55%;
+    --accent: 43 80% 45%;             /* Darker Orange for accent */
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 43 80% 50%;
 
-    --muted: 218 33% 12%;             /* #252D3D */
-    --muted-foreground: 220 9% 65%;   /* #9CA3AF - Cool Gray */
+    --muted: 0 0% 90%;                   /* #E5E5E5 - Light Gray */
+    --muted-foreground: 220 47% 16%;     /* Dark Navy for text on light */
 
     --destructive: 0 85% 65%;         /* Modern Red */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 218 33% 15%;            /* #2A3441 */
-    --input: 218 33% 15%;
-    --ring: 268 100% 70%;
+    --border: 220 47% 20%;            /* Navy borders */
+    --input: 220 47% 20%;             /* Navy inputs */
+    --ring: 43 97% 53%;               /* Golden Orange ring */
 
-    /* Modern Neutral System */
-    --neutral-50: 220 20% 95%;       /* Very Light Cool */
-    --neutral-100: 220 14% 90%;      /* Light Cool Gray */
-    --neutral-200: 220 13% 80%;      /* Cool Gray */
-    --neutral-300: 220 9% 65%;       /* #9CA3AF - Medium Cool Gray */
-    --neutral-400: 220 9% 50%;       /* Dark Cool Gray */
-    --neutral-500: 218 11% 35%;      /* Darker Cool Gray */
-    --neutral-600: 218 20% 25%;      /* Deep Cool Gray */
-    --neutral-700: 218 33% 15%;      /* Very Deep Cool */
-    --neutral-800: 220 39% 8%;       /* Dark Surface */
-    --neutral-900: 222 47% 4%;       /* Deep Dark Blue */
+    /* Professional Neutral System */
+    --neutral-50: 0 0% 98%;           /* #FAFAFA - Almost White */
+    --neutral-100: 0 0% 90%;          /* #E5E5E5 - Light Gray */
+    --neutral-200: 0 0% 80%;          /* Medium Light Gray */
+    --neutral-300: 0 0% 60%;          /* Medium Gray */
+    --neutral-400: 0 0% 40%;          /* Dark Gray */
+    --neutral-500: 220 47% 35%;       /* Medium Navy */
+    --neutral-600: 220 47% 25%;       /* Dark Navy */
+    --neutral-700: 220 47% 20%;       /* Darker Navy */
+    --neutral-800: 220 47% 16%;       /* #14213D - Main Navy */
+    --neutral-900: 0 0% 0%;           /* #000000 - Pure Black */
 
-    /* Electric Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(268 100% 70%), hsl(195 100% 50%)); /* Purple to Cyan */
-    --gradient-secondary: linear-gradient(135deg, hsl(173 100% 50%), hsl(268 100% 70%)); /* Green to Purple */
-    --gradient-hero: linear-gradient(135deg, hsl(268 100% 70%) 0%, hsl(173 100% 50%) 50%, hsl(195 100% 50%) 100%); /* Triple Gradient */
-    --gradient-accent: linear-gradient(135deg, hsl(195 100% 50%), hsl(268 100% 85%)); /* Cyan to Light Purple */
-    --gradient-surface: linear-gradient(135deg, hsl(220 39% 8%), hsl(218 33% 12%)); /* Dark surface gradient */
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(43 97% 53%), hsl(43 80% 45%)); /* Golden Orange gradient */
+    --gradient-secondary: linear-gradient(135deg, hsl(220 47% 16%), hsl(220 47% 25%)); /* Navy gradient */
+    --gradient-hero: linear-gradient(135deg, hsl(43 97% 53%) 0%, hsl(220 47% 16%) 50%, hsl(0 0% 0%) 100%); /* Orange to Navy to Black */
+    --gradient-accent: linear-gradient(135deg, hsl(220 47% 20%), hsl(43 97% 53%)); /* Navy to Orange */
+    --gradient-surface: linear-gradient(135deg, hsl(220 47% 16%), hsl(220 47% 20%)); /* Navy surface gradient */
 
-    /* Electric Shadows & Glows */
+    /* Professional Shadows & Glows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.1);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
-    --shadow-primary: 0 0 50px hsl(268 100% 70% / 0.3), 0 0 100px hsl(268 100% 70% / 0.1);
-    --shadow-secondary: 0 0 50px hsl(173 100% 50% / 0.3), 0 0 100px hsl(173 100% 50% / 0.1);
-    --shadow-accent: 0 0 50px hsl(195 100% 50% / 0.3), 0 0 100px hsl(195 100% 50% / 0.1);
-    --shadow-glow: 0 0 40px hsl(268 100% 85% / 0.6);
+    --shadow-primary: 0 0 50px hsl(43 97% 53% / 0.3), 0 0 100px hsl(43 97% 53% / 0.1);
+    --shadow-secondary: 0 0 50px hsl(220 47% 16% / 0.3), 0 0 100px hsl(220 47% 16% / 0.1);
+    --shadow-accent: 0 0 50px hsl(43 80% 45% / 0.3), 0 0 100px hsl(43 80% 45% / 0.1);
+    --shadow-glow: 0 0 40px hsl(43 97% 68% / 0.6);
     --shadow-neon: 0 0 20px currentColor, 0 0 40px currentColor, 0 0 80px currentColor;
 
     /* Animations */
@@ -97,44 +98,44 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode - same as light since we're electric dark themed */
-    --background: 222 47% 4%;         
-    --foreground: 0 0% 100%;          
+    /* Dark mode - same colors as light mode for consistency */
+    --background: 0 0% 0%;            /* #000000 - Pure Black */
+    --foreground: 0 0% 100%;          /* #FFFFFF - Pure White */
 
-    --card: 220 39% 8%;               
+    --card: 220 47% 16%;              /* #14213D - Dark Navy */
     --card-foreground: 0 0% 100%;
 
-    --popover: 218 33% 12%;           
+    --popover: 220 47% 20%;           /* Lighter Navy for popovers */
     --popover-foreground: 0 0% 100%;
 
-    --primary: 268 100% 70%;          
-    --primary-foreground: 0 0% 100%;
-    --primary-hover: 268 100% 75%;
-    --primary-glow: 268 100% 85%;     
+    --primary: 43 97% 53%;            /* #FCA311 - Golden Orange */
+    --primary-foreground: 0 0% 0%;    /* Black text on orange */
+    --primary-hover: 43 97% 58%;
+    --primary-glow: 43 97% 68%;       /* Light Orange Glow */
 
-    --secondary: 173 100% 50%;        
-    --secondary-foreground: 220 39% 8%;
-    --secondary-hover: 173 100% 55%;
+    --secondary: 220 47% 25%;         /* Lighter Navy for secondary */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 220 47% 30%;
 
-    --muted: 218 33% 12%;             
-    --muted-foreground: 220 9% 65%;   
+    --muted: 0 0% 90%;                /* #E5E5E5 - Light Gray */
+    --muted-foreground: 220 47% 16%;  /* Dark Navy for text on light */
 
-    --accent: 195 100% 50%;           
-    --accent-foreground: 220 39% 8%;
-    --accent-hover: 195 100% 55%;
+    --accent: 43 80% 45%;             /* Darker Orange for accent */
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 43 80% 50%;
 
-    --border: 218 33% 15%;            
-    --input: 218 33% 15%;
-    --ring: 268 100% 70%;
+    --border: 220 47% 20%;            /* Navy borders */
+    --input: 220 47% 20%;             /* Navy inputs */
+    --ring: 43 97% 53%;               /* Golden Orange ring */
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 220 47% 16%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 43 97% 53%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 220 47% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 47% 20%;
+    --sidebar-ring: 43 97% 53%;
   }
 }
 
