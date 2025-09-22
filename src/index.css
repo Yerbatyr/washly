@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* ShineGo Professional Design System - Car Wash Subscription Platform
-Professional Black, Navy & Golden Orange Color Palette
+Night Blue & Light Grey Professional Color Palette
 All colors MUST be HSL.
 */
 
@@ -11,67 +11,67 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Professional Color Palette Design System */
-    --background: 0 0% 0%;            /* #000000 - Pure Black */
-    --foreground: 0 0% 100%;          /* #FFFFFF - Pure White */
+    /* Night Blue & Grey Professional Design System */
+    --background: 0 0% 98%;           /* #FAFAFA - Light Grey White */
+    --foreground: 220 47% 11%;        /* #0F1419 - Very Dark Navy */
 
-    --card: 220 47% 16%;              /* #14213D - Dark Navy */
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 100%;                /* #FFFFFF - Pure White */
+    --card-foreground: 220 47% 11%;
 
-    --popover: 220 47% 20%;           /* Lighter Navy for popovers */
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;             /* Pure White for popovers */
+    --popover-foreground: 220 47% 11%;
 
-    --primary: 43 97% 53%;            /* #FCA311 - Golden Orange */
-    --primary-foreground: 0 0% 0%;    /* Black text on orange */
-    --primary-hover: 43 97% 58%;
-    --primary-glow: 43 97% 68%;       /* Light Orange Glow */
+    --primary: 220 47% 16%;           /* #14213D - Night Blue */
+    --primary-foreground: 0 0% 100%;  /* White text on blue */
+    --primary-hover: 220 47% 20%;
+    --primary-glow: 220 47% 25%;      /* Light Blue Glow */
 
-    --secondary: 220 47% 25%;         /* Lighter Navy for secondary */
-    --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 220 47% 30%;
+    --secondary: 220 30% 85%;         /* Light Blue Grey for secondary */
+    --secondary-foreground: 220 47% 11%;
+    --secondary-hover: 220 30% 80%;
 
-    --accent: 43 80% 45%;             /* Darker Orange for accent */
+    --accent: 220 60% 30%;            /* Medium Night Blue for accent */
     --accent-foreground: 0 0% 100%;
-    --accent-hover: 43 80% 50%;
+    --accent-hover: 220 60% 35%;
 
-    --muted: 0 0% 90%;                   /* #E5E5E5 - Light Gray */
-    --muted-foreground: 220 47% 16%;     /* Dark Navy for text on light */
+    --muted: 220 20% 94%;             /* Light Blue Grey */
+    --muted-foreground: 220 47% 25%;  /* Medium Navy for text on light */
 
     --destructive: 0 85% 65%;         /* Modern Red */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 47% 20%;            /* Navy borders */
-    --input: 220 47% 20%;             /* Navy inputs */
-    --ring: 43 97% 53%;               /* Golden Orange ring */
+    --border: 220 30% 90%;            /* Light Blue Grey borders */
+    --input: 220 30% 92%;             /* Light Blue Grey inputs */
+    --ring: 220 47% 16%;              /* Night Blue ring */
 
-    /* Professional Neutral System */
+    /* Night Blue Neutral System */
     --neutral-50: 0 0% 98%;           /* #FAFAFA - Almost White */
-    --neutral-100: 0 0% 90%;          /* #E5E5E5 - Light Gray */
-    --neutral-200: 0 0% 80%;          /* Medium Light Gray */
-    --neutral-300: 0 0% 60%;          /* Medium Gray */
-    --neutral-400: 0 0% 40%;          /* Dark Gray */
-    --neutral-500: 220 47% 35%;       /* Medium Navy */
-    --neutral-600: 220 47% 25%;       /* Dark Navy */
-    --neutral-700: 220 47% 20%;       /* Darker Navy */
-    --neutral-800: 220 47% 16%;       /* #14213D - Main Navy */
-    --neutral-900: 0 0% 0%;           /* #000000 - Pure Black */
+    --neutral-100: 220 20% 94%;       /* Light Blue Grey */
+    --neutral-200: 220 25% 85%;       /* Medium Light Blue Grey */
+    --neutral-300: 220 30% 70%;       /* Medium Blue Grey */
+    --neutral-400: 220 35% 55%;       /* Dark Blue Grey */
+    --neutral-500: 220 40% 40%;       /* Medium Navy */
+    --neutral-600: 220 45% 30%;       /* Dark Navy */
+    --neutral-700: 220 47% 25%;       /* Darker Navy */
+    --neutral-800: 220 47% 20%;       /* Deep Navy */
+    --neutral-900: 220 47% 11%;       /* Very Dark Navy */
 
-    /* Professional Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(43 97% 53%), hsl(43 80% 45%)); /* Golden Orange gradient */
-    --gradient-secondary: linear-gradient(135deg, hsl(220 47% 16%), hsl(220 47% 25%)); /* Navy gradient */
-    --gradient-hero: linear-gradient(135deg, hsl(43 97% 53%) 0%, hsl(220 47% 16%) 50%, hsl(0 0% 0%) 100%); /* Orange to Navy to Black */
-    --gradient-accent: linear-gradient(135deg, hsl(220 47% 20%), hsl(43 97% 53%)); /* Navy to Orange */
-    --gradient-surface: linear-gradient(135deg, hsl(220 47% 16%), hsl(220 47% 20%)); /* Navy surface gradient */
+    /* Night Blue Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 47% 16%), hsl(220 60% 30%)); /* Night Blue gradient */
+    --gradient-secondary: linear-gradient(135deg, hsl(220 30% 85%), hsl(220 20% 94%)); /* Light Blue gradient */
+    --gradient-hero: linear-gradient(135deg, hsl(220 47% 16%) 0%, hsl(220 60% 30%) 50%, hsl(220 47% 11%) 100%); /* Night Blue hero */
+    --gradient-accent: linear-gradient(135deg, hsl(220 60% 30%), hsl(220 47% 25%)); /* Night Blue accent */
+    --gradient-surface: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 20% 94%)); /* Light surface gradient */
 
-    /* Professional Shadows & Glows */
+    /* Night Blue Shadows & Glows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.1);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
-    --shadow-primary: 0 0 50px hsl(43 97% 53% / 0.3), 0 0 100px hsl(43 97% 53% / 0.1);
-    --shadow-secondary: 0 0 50px hsl(220 47% 16% / 0.3), 0 0 100px hsl(220 47% 16% / 0.1);
-    --shadow-accent: 0 0 50px hsl(43 80% 45% / 0.3), 0 0 100px hsl(43 80% 45% / 0.1);
-    --shadow-glow: 0 0 40px hsl(43 97% 68% / 0.6);
+    --shadow-primary: 0 0 50px hsl(220 47% 16% / 0.2), 0 0 100px hsl(220 47% 16% / 0.1);
+    --shadow-secondary: 0 0 50px hsl(220 30% 85% / 0.3), 0 0 100px hsl(220 30% 85% / 0.1);
+    --shadow-accent: 0 0 50px hsl(220 60% 30% / 0.3), 0 0 100px hsl(220 60% 30% / 0.1);
+    --shadow-glow: 0 0 40px hsl(220 47% 25% / 0.4);
     --shadow-neon: 0 0 20px currentColor, 0 0 40px currentColor, 0 0 80px currentColor;
 
     /* Animations */
@@ -98,44 +98,44 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark mode - same colors as light mode for consistency */
-    --background: 0 0% 0%;            /* #000000 - Pure Black */
-    --foreground: 0 0% 100%;          /* #FFFFFF - Pure White */
+    /* Dark mode - Night Blue theme for dark environments */
+    --background: 220 47% 11%;        /* Very Dark Navy */
+    --foreground: 0 0% 98%;           /* Light Grey White */
 
-    --card: 220 47% 16%;              /* #14213D - Dark Navy */
-    --card-foreground: 0 0% 100%;
+    --card: 220 47% 16%;              /* Night Blue */
+    --card-foreground: 0 0% 98%;
 
     --popover: 220 47% 20%;           /* Lighter Navy for popovers */
-    --popover-foreground: 0 0% 100%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 43 97% 53%;            /* #FCA311 - Golden Orange */
-    --primary-foreground: 0 0% 0%;    /* Black text on orange */
-    --primary-hover: 43 97% 58%;
-    --primary-glow: 43 97% 68%;       /* Light Orange Glow */
+    --primary: 220 60% 30%;           /* Medium Night Blue */
+    --primary-foreground: 0 0% 98%;   /* Light text on blue */
+    --primary-hover: 220 60% 35%;
+    --primary-glow: 220 60% 40%;      /* Light Blue Glow */
 
-    --secondary: 220 47% 25%;         /* Lighter Navy for secondary */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 47% 25%;         /* Darker Navy for secondary */
+    --secondary-foreground: 0 0% 98%;
     --secondary-hover: 220 47% 30%;
 
-    --muted: 0 0% 90%;                /* #E5E5E5 - Light Gray */
-    --muted-foreground: 220 47% 16%;  /* Dark Navy for text on light */
+    --muted: 220 47% 20%;             /* Dark Navy */
+    --muted-foreground: 220 30% 70%;  /* Light Blue Grey for text */
 
-    --accent: 43 80% 45%;             /* Darker Orange for accent */
-    --accent-foreground: 0 0% 100%;
-    --accent-hover: 43 80% 50%;
+    --accent: 220 47% 25%;            /* Navy accent */
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 220 47% 30%;
 
-    --border: 220 47% 20%;            /* Navy borders */
-    --input: 220 47% 20%;             /* Navy inputs */
-    --ring: 43 97% 53%;               /* Golden Orange ring */
+    --border: 220 47% 25%;            /* Navy borders */
+    --input: 220 47% 25%;             /* Navy inputs */
+    --ring: 220 60% 30%;              /* Night Blue ring */
 
     --sidebar-background: 220 47% 16%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 43 97% 53%;
-    --sidebar-primary-foreground: 0 0% 0%;
-    --sidebar-accent: 220 47% 20%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 220 47% 20%;
-    --sidebar-ring: 43 97% 53%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 220 60% 30%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 47% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 47% 25%;
+    --sidebar-ring: 220 60% 30%;
   }
 }
 
