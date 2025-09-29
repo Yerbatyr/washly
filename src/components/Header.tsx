@@ -13,8 +13,8 @@ const Header = () => {
               <QrCode className="w-6 h-6 text-primary-foreground" />
             </div>
             <div className="text-2xl font-black">
-              <span className="text-primary">Shine</span>
-              <span className="text-foreground">Go</span>
+              <span className="text-primary">Wash</span>
+              <span className="text-foreground">ly</span>
             </div>
           </div>
 

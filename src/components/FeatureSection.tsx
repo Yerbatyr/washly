@@ -46,7 +46,7 @@ const FeatureSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-            Почему выбирают <span className="text-gradient-primary">ShineGo</span>?
+            Почему выбирают <span className="text-gradient-primary">Washly</span>?
           </h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
             Мы переосмыслили автомойку с помощью передовых технологий, прозрачного ценообразования 
@@ -90,7 +90,7 @@ const FeatureSection = () => {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "1", title: "Скачайте приложение", desc: "Получите ShineGo из App Store или Google Play" },
+              { step: "1", title: "Скачайте приложение", desc: "Получите Washly из App Store или Google Play" },
               { step: "2", title: "Выберите план", desc: "Выберите безлимитный месячный или оплата за мойку" },
               { step: "3", title: "Найдите станцию", desc: "Используйте карту для поиска ближайших станций-партнёров" },
               { step: "4", title: "Сканируйте и мойтесь", desc: "Покажите QR-код, подтвердите и наслаждайтесь мойкой" }

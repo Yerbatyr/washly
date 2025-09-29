@@ -172,7 +172,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-2xl font-bold text-gradient-primary mb-4">ShineGo</div>
+              <div className="text-2xl font-bold text-gradient-primary mb-4">Washly</div>
               <p className="text-neutral-400 text-sm leading-relaxed">
                 Будущее автомойки уже здесь. Удобно, доступно и всегда под рукой.
               </p>
@@ -207,7 +207,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-400">
-            <p>&copy; 2024 ShineGo. Сделано с ❤️ в Казахстане.</p>
+            <p>&copy; 2024 Washly. Сделано с ❤️ в Казахстане.</p>
           </div>
         </div>
       </footer>
