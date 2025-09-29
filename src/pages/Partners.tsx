@@ -79,7 +79,7 @@ const Partners = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-5xl mx-auto text-center">
             {/* Problem Hook */}
-            <Badge variant="secondary" className="mb-6 px-6 py-3 text-sm font-bold border border-primary/20">
+            <Badge variant="secondary" className="mt-16 mb-6 px-6 py-3 text-sm font-bold border border-primary/20">
               <Zap className="w-4 h-4 mr-2" />
               ТОЛЬКО ДЛЯ ВЛАДЕЛЬЦЕВ АВТОМОЕК
             </Badge>
