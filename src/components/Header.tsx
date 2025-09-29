@@ -26,8 +26,8 @@ const Header = () => {
             <a href="#pricing" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
               Тарифы
             </a>
-            <a href="#stations" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
-              Станции
+            <a href="/partners" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
+              Партнерам
             </a>
           </nav>
 
