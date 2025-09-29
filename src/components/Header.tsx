@@ -20,6 +20,9 @@ const Header = () => {
 
           {/* Navigation - Hidden on mobile */}
           <nav className="hidden md:flex items-center gap-8">
+            <a href="/" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
+              Главная
+            </a>
             <a href="#features" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
               Преимущества
             </a>
