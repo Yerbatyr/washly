@@ -19,7 +19,7 @@ const Index = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
             {/* Problem/Pain Hook */}
-            <Badge variant="secondary" className="mb-10 px-6 py-3 text-sm font-bold border border-primary/20">
+            <Badge variant="secondary" className="mt-16 mb-10 px-6 py-3 text-sm font-bold border border-primary/20">
               <Sparkles className="w-4 h-4 mr-2" />
               ПРЕКРАТИТЕ ПЕРЕПЛАЧИВАТЬ ЗА МОЙКУ
             </Badge>
