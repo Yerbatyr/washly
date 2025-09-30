@@ -16,6 +16,9 @@ import {
   Mail
 } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import StructuredData from "@/components/StructuredData";
 
 const Partners = () => {
   const benefits = [
@@ -70,8 +73,16 @@ const Partners = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
+    <>
+      <SEO 
+        title="Партнерам - Зарабатывайте 1,500,000₸+ в месяц"
+        description="Подключите вашу автомойку к сети Washly и увеличьте выручку на 300%+. 10,000+ готовых клиентов без рекламных затрат. Подключение за 24 часа."
+        keywords="партнерство автомойка, франшиза автомойка казахстан, бизнес автомойка, заработок на автомойке"
+      />
+      <StructuredData type="service" />
+      
+      <div className="min-h-screen bg-background">
+        <Header />
       
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-20 pb-32 bg-background">
@@ -380,59 +391,9 @@ const Partners = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-16 bg-neutral-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="text-2xl font-bold text-gradient-primary mb-4">Washly Partners</div>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Присоединяйтесь к самой быстрорастущей сети автомоек в Казахстане.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Для партнеров</h4>
-              <ul className="space-y-2 text-sm text-neutral-400">
-                <li><a href="#" className="hover:text-white transition-colors">Стать партнером</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Требования</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Доходы</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Поддержка</h4>
-              <ul className="space-y-2 text-sm text-neutral-400">
-                <li><a href="tel:+77771234567" className="hover:text-white transition-colors">+7 (777) 123-45-67</a></li>
-                <li><a href="mailto:partners@washly.kz" className="hover:text-white transition-colors">partners@washly.kz</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">База знаний</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Контакты</h4>
-              <ul className="space-y-2 text-sm text-neutral-400">
-                <li className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
-                  г. Алматы, ул. Абая, 150
-                </li>
-                <li className="flex items-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  24/7 горячая линия
-                </li>
-                <li className="flex items-center gap-2">
-                  <Mail className="w-4 h-4" />
-                  Быстрый ответ в течение часа
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-400">
-            <p>&copy; 2024 Washly Partners. Растем вместе в Казахстане.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
+    </>
   );
 };
 

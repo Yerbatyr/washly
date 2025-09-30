@@ -1,52 +1,52 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { QrCode, Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border" role="banner">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
+          <Link to="/" className="flex items-center gap-3" aria-label="Washly - Главная страница">
+            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center" aria-hidden="true">
               <QrCode className="w-6 h-6 text-primary-foreground" />
             </div>
             <div className="text-2xl font-black">
               <span className="text-primary">Wash</span>
               <span className="text-foreground">ly</span>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation - Hidden on mobile */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="/" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
+          <nav className="hidden md:flex items-center gap-8" aria-label="Основная навигация">
+            <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               Главная
-            </a>
-            <a href="#features" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
+            </Link>
+            <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               Преимущества
             </a>
-            <a href="#pricing" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
+            <a href="#pricing" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               Тарифы
             </a>
-            <a href="/partners" className="text-sm font-medium text-neutral-300 hover:text-primary transition-colors">
+            <Link to="/partners" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               Партнерам
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex text-neutral-300 hover:text-primary">
+            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
               Войти
             </Button>
             
-            <Button variant="hero" size="sm" className="font-bold">
-              <QrCode className="w-4 h-4 mr-2" />
+            <Button variant="hero" size="sm" className="font-bold" aria-label="Начать экономить с Washly">
+              <QrCode className="w-4 h-4 mr-2" aria-hidden="true" />
               НАЧАТЬ ЭКОНОМИТЬ
             </Button>
 
             {/* Mobile menu button */}
-            <Button variant="ghost" size="sm" className="md:hidden">
+            <Button variant="ghost" size="sm" className="md:hidden" aria-label="Открыть меню">
               <Menu className="w-5 h-5" />
             </Button>
           </div>
@@ -54,8 +54,8 @@ const Header = () => {
       </div>
 
       {/* Urgency Bar */}
-      <div className="bg-red-600 text-white text-center py-2 text-sm font-bold">
-        🔥 ОГРАНИЧЕННОЕ ПРЕДЛОЖЕНИЕ: Цена 15,000₸ действует только 7 дней! Потом будет 25,000₸
+      <div className="bg-destructive text-destructive-foreground text-center py-2 text-sm font-bold" role="alert">
+        <span aria-hidden="true">🔥</span> ОГРАНИЧЕННОЕ ПРЕДЛОЖЕНИЕ: Цена 15,000₸ действует только 7 дней! Потом будет 25,000₸
       </div>
     </header>
   );

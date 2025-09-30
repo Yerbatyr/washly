@@ -76,7 +76,7 @@ const TestimonialsSection = () => {
       name: "Камила Бекмуханова",
       role: "Блогер",
       avatar: "КБ",
-      text: "Уже всем друзьям посоветовала ShineGo",
+      text: "Уже всем друзьям посоветовала Washly",
       gradient: "bg-primary"
     },
     {
@@ -112,14 +112,14 @@ const TestimonialsSection = () => {
   );
 
   return (
-    <section className="py-20 bg-background overflow-hidden">
+    <section className="py-20 bg-background overflow-hidden" aria-labelledby="testimonials-heading">
       <div className="container mx-auto px-4 mb-16">
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 id="testimonials-heading" className="text-4xl lg:text-5xl font-bold mb-6">
             Что говорят наши <span className="text-gradient-primary">клиенты</span>
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Более 10,000 довольных пользователей уже экономят деньги и время с ShineGo
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Более 10,000 довольных пользователей уже экономят деньги и время с Washly
           </p>
         </div>
       </div>

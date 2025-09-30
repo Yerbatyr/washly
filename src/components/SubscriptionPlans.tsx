@@ -58,21 +58,21 @@ const SubscriptionPlans = () => {
   ];
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section id="pricing" className="py-20 bg-background relative overflow-hidden" aria-labelledby="pricing-heading">
       <div className="container mx-auto px-4">
         {/* Aggressive Pricing Header */}
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-6 px-6 py-3 text-sm font-bold border border-red-500 text-red-400">
-            🔥 ОГРАНИЧЕННОЕ ВРЕМЯ - ЦЕНА ПОДНИМЕТСЯ ЧЕРЕЗ 7 ДНЕЙ
+          <Badge variant="secondary" className="mb-6 px-6 py-3 text-sm font-bold border border-destructive text-destructive" role="alert">
+            <span aria-hidden="true">🔥</span> ОГРАНИЧЕННОЕ ВРЕМЯ - ЦЕНА ПОДНИМЕТСЯ ЧЕРЕЗ 7 ДНЕЙ
           </Badge>
           
-          <h2 className="text-4xl lg:text-6xl font-black mb-6 leading-tight">
+          <h2 id="pricing-heading" className="text-4xl lg:text-6xl font-black mb-6 leading-tight">
             ПРЕКРАТИТЕ переплачивать<br />
             <span className="text-primary">75,000₸+ В МЕСЯЦ</span>
           </h2>
           
-          <p className="text-xl lg:text-2xl text-neutral-300 max-w-4xl mx-auto font-medium">
-            Средний клиент моет машину 10+ раз в месяц = <span className="text-red-400 font-black">75,000₸</span><br />
+          <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto font-medium">
+            Средний клиент моет машину 10+ раз в месяц = <span className="text-destructive font-black">75,000₸</span><br />
             С нашим безлимитом = <span className="text-primary font-black">15,000₸</span><br />
             <span className="text-2xl lg:text-3xl text-primary font-black">ЭКОНОМИЯ: 720,000₸ В ГОД!</span>
           </p>
@@ -109,27 +109,27 @@ const SubscriptionPlans = () => {
               <CardContent className="p-8">
                 <div className="text-center mb-8">
                   <h3 className={`text-2xl font-black mb-4 ${
-                    plan.popular ? 'text-primary' : index === 0 ? 'text-red-400' : 'text-foreground'
+                    plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-foreground'
                   }`}>
                     {plan.name}
                   </h3>
                   
                   <div className="mb-4">
                     {plan.originalPrice && (
-                      <div className="text-lg text-red-400 line-through font-semibold">
+                      <div className="text-lg text-destructive line-through font-semibold">
                         {plan.originalPrice}
                       </div>
                     )}
                     <div className={`text-5xl font-black ${
-                      plan.popular ? 'text-primary' : index === 0 ? 'text-red-400' : 'text-foreground'
+                      plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-foreground'
                     }`}>
                       {plan.price}
                     </div>
-                    <div className="text-neutral-400 font-medium">{plan.period}</div>
+                    <div className="text-muted-foreground font-medium">{plan.period}</div>
                   </div>
                   
                   <p className={`text-sm font-bold ${
-                    plan.popular ? 'text-primary' : index === 0 ? 'text-red-400' : 'text-neutral-300'
+                    plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-muted-foreground'
                   }`}>
                     {plan.description}
                   </p>
@@ -141,10 +141,10 @@ const SubscriptionPlans = () => {
                       {feature.included ? (
                         <Check className="w-5 h-5 text-primary flex-shrink-0" />
                       ) : (
-                        <X className="w-5 h-5 text-red-400 flex-shrink-0" />
+                        <X className="w-5 h-5 text-destructive flex-shrink-0" />
                       )}
                       <span className={`text-sm ${
-                        feature.included ? 'text-foreground' : 'text-red-400 line-through'
+                        feature.included ? 'text-foreground' : 'text-destructive line-through'
                       } font-medium`}>
                         {feature.text}
                       </span>
@@ -159,19 +159,20 @@ const SubscriptionPlans = () => {
                     plan.popular 
                       ? 'bg-primary hover:bg-primary-hover text-primary-foreground shadow-primary animate-pulse' 
                       : index === 0
-                        ? 'bg-red-950 border-red-500 text-red-400 hover:bg-red-900'
+                        ? 'bg-destructive/10 border-destructive text-destructive hover:bg-destructive/20'
                         : ''
                   }`}
                   disabled={index === 0}
+                  aria-label={plan.buttonText}
                 >
-                  {index === 0 && <X className="w-5 h-5 mr-2" />}
-                  {plan.popular && <Zap className="w-5 h-5 mr-2" />}
+                  {index === 0 && <X className="w-5 h-5 mr-2" aria-hidden="true" />}
+                  {plan.popular && <Zap className="w-5 h-5 mr-2" aria-hidden="true" />}
                   {plan.buttonText}
                 </Button>
 
                 {plan.popular && (
                   <p className="text-center text-sm text-primary font-bold mt-4">
-                    ⚡ Активация за 60 секунд
+                    <span aria-hidden="true">⚡</span> Активация за 60 секунд
                   </p>
                 )}
               </CardContent>
@@ -185,14 +186,14 @@ const SubscriptionPlans = () => {
             <h3 className="text-2xl font-black mb-4 text-primary">
               🔒 ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ 30 ДНЕЙ
             </h3>
-            <p className="text-neutral-300 mb-6">
+            <p className="text-muted-foreground mb-6">
               Если не сэкономите минимум 30,000₸ в первый месяц использования - 
               вернем ВСЕ деньги без вопросов. Это наша гарантия качества.
             </p>
             <div className="grid md:grid-cols-2 gap-6 text-sm">
               <div className="text-left">
-                <h4 className="font-bold text-primary mb-2">✅ ЧТО ВЫ ПОЛУЧАЕТЕ:</h4>
-                <ul className="space-y-1 text-neutral-300">
+                <h4 className="font-bold text-primary mb-2"><span aria-hidden="true">✅</span> ЧТО ВЫ ПОЛУЧАЕТЕ:</h4>
+                <ul className="space-y-1 text-muted-foreground">
                   <li>• Безлимитные мойки на 50+ станциях</li>
                   <li>• QR-код без очередей</li>
                   <li>• Экономия 60,000₸+ в месяц</li>
@@ -200,8 +201,8 @@ const SubscriptionPlans = () => {
                 </ul>
               </div>
               <div className="text-left">
-                <h4 className="font-bold text-red-400 mb-2">❌ БЕЗ ПОДПИСКИ:</h4>
-                <ul className="space-y-1 text-neutral-400">
+                <h4 className="font-bold text-destructive mb-2"><span aria-hidden="true">❌</span> БЕЗ ПОДПИСКИ:</h4>
+                <ul className="space-y-1 text-muted-foreground">
                   <li>• Переплата 75,000₸+ в месяц</li>
                   <li>• Очереди и потерянное время</li>
                   <li>• Нет гарантий качества</li>
