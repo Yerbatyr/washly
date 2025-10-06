@@ -60,13 +60,13 @@ const HeroSection = () => {
             <Button 
               variant="hero" 
               size="xl" 
-              className="px-12 py-6 text-xl font-bold"
+              className="w-full sm:w-auto px-4 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-xl font-bold"
               aria-label="Получить безлимитную подписку на мойку автомобиля"
             >
-              <QrCode className="w-6 h-6 mr-3" aria-hidden="true" />
+              <QrCode className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 sm:mr-3" aria-hidden="true" />
               ПОЛУЧИТЬ БЕЗЛИМИТ СЕЙЧАС
             </Button>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs sm:text-sm text-muted-foreground px-2">
               <span aria-hidden="true">⚡</span> Активация за 2 минуты <span aria-hidden="true">•</span> <span aria-hidden="true">🎯</span> Первая мойка БЕСПЛАТНО
             </p>
           </div>
