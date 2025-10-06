@@ -10,6 +10,17 @@ const partnerMessages = [
   "✅ Гарантия результата или работаем бесплатно"
 ];
 
+const clientMessages = [
+  "🔥 Безлимитные мойки за 15,000₸/месяц — экономия до 45,000₸",
+  "💎 1,247 клиентов уже сэкономили 12,450,000₸ в этом месяце",
+  "⚡ Цена 15,000₸ только 7 дней — потом 25,000₸",
+  "🚗 Мойте авто сколько хотите — никаких лимитов и доплат",
+  "✅ Попробуйте 7 дней бесплатно — отмените в любой момент",
+  "🎯 327 моек по всему городу — всегда рядом с вами",
+  "💰 Средний клиент экономит 70% на автомойках",
+  "🏆 100% гарантия качества или деньги назад"
+];
+
 const Header = () => {
   const location = useLocation();
   const isPartnersPage = location.pathname === '/partners';
@@ -83,8 +94,21 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-destructive text-destructive-foreground text-center py-2 text-sm font-bold" role="alert">
-          <span aria-hidden="true">🚗</span> СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ: Безлимитные мойки за 15,000₸/месяц! Экономия до 70% на каждой мойке
+        <div className="bg-destructive text-destructive-foreground py-2 overflow-hidden relative" role="alert">
+          <div className="flex animate-scroll-banner whitespace-nowrap">
+            {/* First set */}
+            {clientMessages.map((message, index) => (
+              <span key={`first-${index}`} className="inline-flex items-center px-8 text-sm font-bold">
+                {message}
+              </span>
+            ))}
+            {/* Duplicate for seamless loop */}
+            {clientMessages.map((message, index) => (
+              <span key={`second-${index}`} className="inline-flex items-center px-8 text-sm font-bold">
+                {message}
+              </span>
+            ))}
+          </div>
         </div>
       )}
     </header>
