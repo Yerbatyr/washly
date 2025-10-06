@@ -55,7 +55,7 @@ const Header = () => {
 
       {/* Urgency Bar */}
       <div className="bg-destructive text-destructive-foreground text-center py-2 text-sm font-bold" role="alert">
-        <span aria-hidden="true">🔥</span> ОГРАНИЧЕННОЕ ПРЕДЛОЖЕНИЕ: Цена 15,000₸ действует только 7 дней! Потом будет 25,000₸
+        <span aria-hidden="true">🚗</span> СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ: Безлимитные мойки за 15,000₸/месяц! Экономия до 70% на каждой мойке
       </div>
     </header>
   );
