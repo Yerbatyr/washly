@@ -106,7 +106,7 @@ const SubscriptionPlans = () => {
                 </div>
               )}
 
-              <CardContent className="p-8">
+              <CardContent className="p-4 sm:p-6 md:p-8">
                 <div className="text-center mb-8">
                   <h3 className={`text-2xl font-black mb-4 ${
                     plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-foreground'
@@ -155,7 +155,7 @@ const SubscriptionPlans = () => {
                 <Button 
                   variant={plan.buttonVariant} 
                   size="lg" 
-                  className={`w-full font-black text-lg py-6 ${
+                  className={`w-full font-black text-sm sm:text-base md:text-lg py-3 sm:py-4 md:py-6 ${
                     plan.popular 
                       ? 'bg-primary hover:bg-primary-hover text-primary-foreground shadow-primary animate-pulse' 
                       : index === 0
@@ -165,8 +165,8 @@ const SubscriptionPlans = () => {
                   disabled={index === 0}
                   aria-label={plan.buttonText}
                 >
-                  {index === 0 && <X className="w-5 h-5 mr-2" aria-hidden="true" />}
-                  {plan.popular && <Zap className="w-5 h-5 mr-2" aria-hidden="true" />}
+                  {index === 0 && <X className="w-4 h-4 sm:w-5 sm:h-5 mr-2" aria-hidden="true" />}
+                  {plan.popular && <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-2" aria-hidden="true" />}
                   {plan.buttonText}
                 </Button>
 
