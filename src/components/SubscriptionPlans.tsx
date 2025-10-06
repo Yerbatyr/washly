@@ -58,8 +58,8 @@ const SubscriptionPlans = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 bg-background relative overflow-hidden" aria-labelledby="pricing-heading">
-      <div className="container mx-auto px-4">
+    <section id="pricing" className="py-12 sm:py-16 md:py-20 bg-background relative overflow-hidden" aria-labelledby="pricing-heading">
+      <div className="container mx-auto px-2 sm:px-4">
         {/* Aggressive Pricing Header */}
         <div className="text-center mb-12 sm:mb-16">
           <Badge variant="secondary" className="mb-4 sm:mb-6 px-3 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-bold border border-destructive text-destructive" role="alert">
@@ -79,34 +79,34 @@ const SubscriptionPlans = () => {
         </div>
 
         {/* Plans Grid */}
-        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
             <Card 
               key={index} 
-              className={`relative group transition-all duration-300 border-2 ${
+              className={`relative group transition-all duration-300 border-2 overflow-hidden ${
                 plan.popular 
-                  ? 'border-primary shadow-primary transform scale-105 bg-gradient-to-b from-card to-primary/5' 
+                  ? 'border-primary shadow-primary md:transform md:scale-105 bg-gradient-to-b from-card to-primary/5' 
                   : index === 0 
                     ? 'border-red-500/30 bg-red-950/20'
                     : 'border-border hover:border-primary/50'
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-primary text-primary-foreground px-6 py-2 font-black text-sm">
-                    <Crown className="w-4 h-4 mr-2" />
+                <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <Badge className="bg-primary text-primary-foreground px-3 sm:px-4 md:px-6 py-1 sm:py-2 font-black text-xs sm:text-sm">
+                    <Crown className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
                     САМЫЙ ВЫГОДНЫЙ
                   </Badge>
                 </div>
               )}
 
               {plan.savings && (
-                <div className="absolute -top-2 -right-2 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-black">
+                <div className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 bg-red-500 text-white px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-black">
                   ЭКОНОМИЯ {plan.savings}
                 </div>
               )}
 
-              <CardContent className="p-4 sm:p-6 md:p-8">
+              <CardContent className="p-3 sm:p-4 md:p-6 lg:p-8">
                 <div className="text-center mb-6 sm:mb-8">
                   <h3 className={`text-xl sm:text-2xl font-black mb-3 sm:mb-4 ${
                     plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-foreground'
