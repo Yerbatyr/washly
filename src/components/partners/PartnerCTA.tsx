@@ -100,9 +100,9 @@ const PartnerCTA = () => {
               <DialogTrigger asChild>
                 <Button 
                   size="lg" 
-                  className="px-16 py-8 text-2xl font-black bg-destructive-foreground text-destructive hover:bg-destructive-foreground/90 shadow-2xl hover:scale-105 transition-all duration-300"
+                  className="w-full sm:w-auto px-4 sm:px-8 md:px-16 py-3 sm:py-5 md:py-8 text-sm sm:text-lg md:text-2xl font-black bg-destructive-foreground text-destructive hover:bg-destructive-foreground/90 shadow-2xl hover:scale-105 transition-all duration-300"
                 >
-                  <Phone className="w-8 h-8 mr-4" />
+                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mr-2 sm:mr-3 md:mr-4" />
                   ОСТАВИТЬ ЗАЯВКУ СЕЙЧАС
                 </Button>
               </DialogTrigger>
