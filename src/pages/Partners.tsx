@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import StructuredData from "@/components/StructuredData";
+import PartnerScrollingBanner from "@/components/partners/PartnerScrollingBanner";
 import PartnerHero from "@/components/partners/PartnerHero";
 import PartnerBenefits from "@/components/partners/PartnerBenefits";
 import PartnerTestimonials from "@/components/partners/PartnerTestimonials";
@@ -21,6 +22,7 @@ const Partners = () => {
       
       <div className="min-h-screen bg-background">
         <Header />
+        <PartnerScrollingBanner />
         <PartnerHero />
         <PartnerBenefits />
         <PartnerTestimonials />
