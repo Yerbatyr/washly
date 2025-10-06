@@ -30,14 +30,14 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border" role="banner">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-2 sm:px-4">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3" aria-label="Washly - Главная страница">
-            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center" aria-hidden="true">
-              <QrCode className="w-6 h-6 text-primary-foreground" />
+          <Link to="/" className="flex items-center gap-2 sm:gap-3" aria-label="Washly - Главная страница">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-primary rounded-xl flex items-center justify-center" aria-hidden="true">
+              <QrCode className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
             </div>
-            <div className="text-2xl font-black">
+            <div className="text-xl sm:text-2xl font-black">
               <span className="text-primary">Wash</span>
               <span className="text-foreground">ly</span>
             </div>
@@ -60,14 +60,14 @@ const Header = () => {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="flex items-center gap-2 sm:gap-4">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
+          <div className="flex items-center gap-1 sm:gap-3">
+            <Button variant="ghost" size="sm" className="hidden sm:inline-flex text-xs sm:text-sm px-2 sm:px-4">
               Войти
             </Button>
             
-            <Button variant="hero" size="sm" className="font-bold px-3 sm:px-4" aria-label="Начать экономить с Washly">
-              <QrCode className="w-4 h-4" aria-hidden="true" />
-              <span className="hidden xs:inline sm:inline ml-2">НАЧАТЬ</span>
+            <Button variant="hero" size="sm" className="font-bold text-xs sm:text-sm px-2 sm:px-4" aria-label="Начать экономить с Washly">
+              <QrCode className="w-3 h-3 sm:w-4 sm:h-4" aria-hidden="true" />
+              <span className="hidden sm:inline ml-1 sm:ml-2">НАЧАТЬ</span>
               <span className="hidden md:inline ml-1">ЭКОНОМИТЬ</span>
             </Button>
 
