@@ -61,25 +61,25 @@ const SubscriptionPlans = () => {
     <section id="pricing" className="py-20 bg-background relative overflow-hidden" aria-labelledby="pricing-heading">
       <div className="container mx-auto px-4">
         {/* Aggressive Pricing Header */}
-        <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-6 px-6 py-3 text-sm font-bold border border-destructive text-destructive" role="alert">
+        <div className="text-center mb-12 sm:mb-16">
+          <Badge variant="secondary" className="mb-4 sm:mb-6 px-3 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-bold border border-destructive text-destructive" role="alert">
             <span aria-hidden="true">🔥</span> ОГРАНИЧЕННОЕ ВРЕМЯ - ЦЕНА ПОДНИМЕТСЯ ЧЕРЕЗ 7 ДНЕЙ
           </Badge>
           
-          <h2 id="pricing-heading" className="text-4xl lg:text-6xl font-black mb-6 leading-tight">
+          <h2 id="pricing-heading" className="text-3xl sm:text-4xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight px-2">
             ПРЕКРАТИТЕ переплачивать<br />
             <span className="text-primary">75,000₸+ В МЕСЯЦ</span>
           </h2>
           
-          <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto font-medium">
+          <p className="text-base sm:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto font-medium px-4">
             Средний клиент моет машину 10+ раз в месяц = <span className="text-destructive font-black">75,000₸</span><br />
             С нашим безлимитом = <span className="text-primary font-black">15,000₸</span><br />
-            <span className="text-2xl lg:text-3xl text-primary font-black">ЭКОНОМИЯ: 720,000₸ В ГОД!</span>
+            <span className="text-xl sm:text-2xl lg:text-3xl text-primary font-black">ЭКОНОМИЯ: 720,000₸ В ГОД!</span>
           </p>
         </div>
 
         {/* Plans Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
             <Card 
               key={index} 
@@ -107,35 +107,35 @@ const SubscriptionPlans = () => {
               )}
 
               <CardContent className="p-4 sm:p-6 md:p-8">
-                <div className="text-center mb-8">
-                  <h3 className={`text-2xl font-black mb-4 ${
+                <div className="text-center mb-6 sm:mb-8">
+                  <h3 className={`text-xl sm:text-2xl font-black mb-3 sm:mb-4 ${
                     plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-foreground'
                   }`}>
                     {plan.name}
                   </h3>
                   
-                  <div className="mb-4">
+                  <div className="mb-3 sm:mb-4">
                     {plan.originalPrice && (
-                      <div className="text-lg text-destructive line-through font-semibold">
+                      <div className="text-base sm:text-lg text-destructive line-through font-semibold">
                         {plan.originalPrice}
                       </div>
                     )}
-                    <div className={`text-5xl font-black ${
+                    <div className={`text-4xl sm:text-5xl font-black ${
                       plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-foreground'
                     }`}>
                       {plan.price}
                     </div>
-                    <div className="text-muted-foreground font-medium">{plan.period}</div>
+                    <div className="text-sm sm:text-base text-muted-foreground font-medium">{plan.period}</div>
                   </div>
                   
-                  <p className={`text-sm font-bold ${
+                  <p className={`text-xs sm:text-sm font-bold ${
                     plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-muted-foreground'
                   }`}>
                     {plan.description}
                   </p>
                 </div>
 
-                <div className="space-y-4 mb-8">
+                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   {plan.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center gap-3">
                       {feature.included ? (
@@ -181,16 +181,16 @@ const SubscriptionPlans = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-card border border-primary/20 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-black mb-4 text-primary">
+        <div className="text-center mt-12 sm:mt-16">
+          <div className="bg-card border border-primary/20 rounded-2xl p-4 sm:p-6 md:p-8 max-w-4xl mx-auto">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-black mb-3 sm:mb-4 text-primary">
               🔒 ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ 30 ДНЕЙ
             </h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 px-2">
               Если не сэкономите минимум 30,000₸ в первый месяц использования - 
               вернем ВСЕ деньги без вопросов. Это наша гарантия качества.
             </p>
-            <div className="grid md:grid-cols-2 gap-6 text-sm">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 text-xs sm:text-sm">
               <div className="text-left">
                 <h4 className="font-bold text-primary mb-2"><span aria-hidden="true">✅</span> ЧТО ВЫ ПОЛУЧАЕТЕ:</h4>
                 <ul className="space-y-1 text-muted-foreground">
