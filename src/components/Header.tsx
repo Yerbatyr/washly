@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { QrCode, Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const partnerMessages = [
   "💰 Заработайте 1,500,000₸+ в месяц",
@@ -24,6 +26,7 @@ const clientMessages = [
 const Header = () => {
   const location = useLocation();
   const isPartnersPage = location.pathname === '/partners';
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border" role="banner">
@@ -68,10 +71,53 @@ const Header = () => {
               <span className="hidden md:inline ml-1">ЭКОНОМИТЬ</span>
             </Button>
 
-            {/* Mobile menu button */}
-            <Button variant="ghost" size="sm" className="md:hidden p-2" aria-label="Открыть меню">
-              <Menu className="w-5 h-5" />
-            </Button>
+            {/* Mobile menu */}
+            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="sm" className="md:hidden p-2" aria-label="Открыть меню">
+                  <Menu className="w-5 h-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[280px]">
+                <nav className="flex flex-col gap-4 mt-8" aria-label="Мобильная навигация">
+                  <Link 
+                    to="/" 
+                    className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Главная
+                  </Link>
+                  <a 
+                    href="#features" 
+                    className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Преимущества
+                  </a>
+                  <a 
+                    href="#pricing" 
+                    className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Тарифы
+                  </a>
+                  <Link 
+                    to="/partners" 
+                    className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Партнерам
+                  </Link>
+                  <Button 
+                    variant="outline" 
+                    className="mt-4 w-full justify-start"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Войти
+                  </Button>
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
