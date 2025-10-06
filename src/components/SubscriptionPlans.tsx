@@ -107,8 +107,8 @@ const SubscriptionPlans = () => {
               )}
 
               <CardContent className="p-3 sm:p-4 md:p-6 lg:p-8">
-                <div className="text-center mb-6 sm:mb-8">
-                  <h3 className={`text-xl sm:text-2xl font-black mb-3 sm:mb-4 ${
+                <div className="text-center mb-6 sm:mb-8 mt-2 sm:mt-0">
+                  <h3 className={`text-lg sm:text-xl md:text-2xl font-black mb-3 sm:mb-4 ${
                     plan.popular ? 'text-primary' : index === 0 ? 'text-destructive' : 'text-foreground'
                   }`}>
                     {plan.name}
