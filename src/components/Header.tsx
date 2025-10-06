@@ -1,8 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { QrCode, Menu } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+const partnerMessages = [
+  "💰 Заработайте 1,500,000₸+ в месяц",
+  "🚀 Рост выручки на 300% за 6 месяцев",
+  "⚡ Подключение за 24 часа бесплатно",
+  "🎯 10,000+ готовых клиентов для вашей мойки",
+  "✅ Гарантия результата или работаем бесплатно"
+];
 
 const Header = () => {
+  const location = useLocation();
+  const isPartnersPage = location.pathname === '/partners';
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border" role="banner">
       <div className="container mx-auto px-4">
@@ -54,9 +65,28 @@ const Header = () => {
       </div>
 
       {/* Urgency Bar */}
-      <div className="bg-destructive text-destructive-foreground text-center py-2 text-sm font-bold" role="alert">
-        <span aria-hidden="true">🚗</span> СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ: Безлимитные мойки за 15,000₸/месяц! Экономия до 70% на каждой мойке
-      </div>
+      {isPartnersPage ? (
+        <div className="bg-destructive text-destructive-foreground py-2 overflow-hidden relative" role="alert">
+          <div className="flex animate-scroll-banner whitespace-nowrap">
+            {/* First set */}
+            {partnerMessages.map((message, index) => (
+              <span key={`first-${index}`} className="inline-flex items-center px-8 text-sm font-bold">
+                {message}
+              </span>
+            ))}
+            {/* Duplicate for seamless loop */}
+            {partnerMessages.map((message, index) => (
+              <span key={`second-${index}`} className="inline-flex items-center px-8 text-sm font-bold">
+                {message}
+              </span>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="bg-destructive text-destructive-foreground text-center py-2 text-sm font-bold" role="alert">
+          <span aria-hidden="true">🚗</span> СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ: Безлимитные мойки за 15,000₸/месяц! Экономия до 70% на каждой мойке
+        </div>
+      )}
     </header>
   );
 };
