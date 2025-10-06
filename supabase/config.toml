@@ -1,1 +1,5 @@
 project_id = "mdoylwhgaubwnmnmrzhk"
+
+# Edge Functions configuration
+[functions.submit-partner-lead]
+verify_jwt = false  # Allow public access for unauthenticated lead submissions

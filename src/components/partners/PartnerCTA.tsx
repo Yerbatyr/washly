@@ -38,17 +38,21 @@ const PartnerCTA = () => {
     setIsSubmitting(true);
     
     try {
-      const { error } = await supabase
-        .from('partner_leads')
-        .insert([{
+      const { data, error } = await supabase.functions.invoke('submit-partner-lead', {
+        body: {
           name: values.name,
           phone: values.phone,
           email: values.email,
           city: values.city,
-          message: values.message || null,
-        }]);
+          message: values.message || undefined,
+        },
+      });
 
       if (error) throw error;
+      
+      if (data?.error) {
+        throw new Error(data.error);
+      }
 
       toast({
         title: "Заявка отправлена!",
@@ -57,10 +61,14 @@ const PartnerCTA = () => {
       
       form.reset();
       setOpen(false);
-    } catch (error) {
+    } catch (error: any) {
+      const errorMessage = error.message?.includes('Too many submissions') 
+        ? error.message 
+        : "Не удалось отправить заявку. Попробуйте позже.";
+        
       toast({
         title: "Ошибка",
-        description: "Не удалось отправить заявку. Попробуйте позже.",
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
