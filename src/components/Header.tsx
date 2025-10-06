@@ -57,18 +57,19 @@ const Header = () => {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
               Войти
             </Button>
             
-            <Button variant="hero" size="sm" className="font-bold" aria-label="Начать экономить с Washly">
-              <QrCode className="w-4 h-4 mr-2" aria-hidden="true" />
-              НАЧАТЬ ЭКОНОМИТЬ
+            <Button variant="hero" size="sm" className="font-bold px-3 sm:px-4" aria-label="Начать экономить с Washly">
+              <QrCode className="w-4 h-4" aria-hidden="true" />
+              <span className="hidden xs:inline sm:inline ml-2">НАЧАТЬ</span>
+              <span className="hidden md:inline ml-1">ЭКОНОМИТЬ</span>
             </Button>
 
             {/* Mobile menu button */}
-            <Button variant="ghost" size="sm" className="md:hidden" aria-label="Открыть меню">
+            <Button variant="ghost" size="sm" className="md:hidden p-2" aria-label="Открыть меню">
               <Menu className="w-5 h-5" />
             </Button>
           </div>
