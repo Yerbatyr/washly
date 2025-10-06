@@ -101,8 +101,8 @@ const SubscriptionPlans = () => {
               )}
 
               {plan.savings && (
-                <div className="absolute -top-1 sm:-top-2 -right-1 sm:-right-2 bg-red-500 text-white px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-black">
-                  ЭКОНОМИЯ {plan.savings}
+                <div className="absolute top-2 right-2 sm:-top-2 sm:-right-2 bg-red-500 text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs md:text-sm font-black leading-tight">
+                  <span className="hidden sm:inline">ЭКОНОМИЯ </span>{plan.savings}
                 </div>
               )}
 
