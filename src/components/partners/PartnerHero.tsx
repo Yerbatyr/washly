@@ -37,7 +37,7 @@ const PartnerHero = () => {
           </h1>
           
           <p className="text-xl lg:text-2xl text-white/90 mb-8 font-medium max-w-4xl mx-auto animate-fade-in">
-            Забудьте про пустые дни и проблемы с персоналом. <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] font-bold">Washly</span> 
+            Забудьте про пустые дни и проблемы с персоналом. <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] font-bold">Washly</span>{" "}
             привлечет <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] font-bold">10,000+ готовых платить клиентов</span> прямо к вашей мойке
           </p>
 
