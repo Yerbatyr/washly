@@ -29,7 +29,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-border/20" role="banner">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-border/20" role="banner">
       <div className="w-full px-2 sm:px-4">
         <div className="flex items-center justify-between h-14 sm:h-16 max-w-7xl mx-auto">
           {/* Logo */}
