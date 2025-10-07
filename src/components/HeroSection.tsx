@@ -43,7 +43,7 @@ const HeroSection = () => {
           {/* Value Proposition */}
           <p className="text-xl lg:text-2xl text-white mb-8 font-medium max-w-3xl mx-auto drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
             Вместо того чтобы платить 2,500₸ за каждую мойку (75,000₸+ в месяц), 
-            получите <span className="font-bold drop-shadow-[0_6px_20px_rgba(0,0,0,1)] bg-gradient-to-r from-green-500 via-white to-green-500 bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] relative before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/80 before:to-transparent before:bg-clip-text before:text-transparent before:animate-[shimmer_2s_ease-in-out_infinite]">БЕЗЛИМИТНЫЙ</span> доступ к 50+ премиальным станциям
+            получите <span className="font-bold drop-shadow-[0_6px_20px_rgba(0,0,0,1)] bg-gradient-to-r from-green-400 via-green-100 to-green-400 bg-clip-text text-transparent animate-[gradient_2s_ease-in-out_infinite,glow_1.5s_ease-in-out_infinite] bg-[length:200%_auto] inline-block">БЕЗЛИМИТНЫЙ</span> доступ к 50+ премиальным станциям
           </p>
 
           {/* Social Proof Numbers */}
