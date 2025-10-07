@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden pt-20 pb-32 bg-black" style={{ width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }} aria-labelledby="hero-heading">
       {/* Hero Video with proper accessibility */}
-      <div className="absolute opacity-50" style={{ top: 0, left: 0, width: '100vw', height: '100%', margin: 0, padding: 0 }} aria-hidden="true">
+      <div className="absolute opacity-100" style={{ top: 0, left: 0, width: '100vw', height: '100%', margin: 0, padding: 0 }} aria-hidden="true">
         <video 
           src={heroVideo} 
           autoPlay 
