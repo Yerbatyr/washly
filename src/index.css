@@ -57,7 +57,7 @@ All colors MUST be HSL.
     /* Night Blue Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(220 47% 16%), hsl(220 60% 30%)); /* Night Blue gradient */
     --gradient-secondary: linear-gradient(135deg, hsl(220 30% 85%), hsl(220 20% 94%)); /* Light Blue gradient */
-    --gradient-hero: linear-gradient(135deg, hsl(220 47% 16%) 0%, hsl(220 60% 30%) 50%, hsl(220 47% 11%) 100%); /* Night Blue hero */
+    --gradient-hero: linear-gradient(135deg, hsl(140 70% 45%) 0%, hsl(150 65% 55%) 50%, hsl(135 60% 35%) 100%); /* Dynamic Green hero */
     --gradient-accent: linear-gradient(135deg, hsl(220 60% 30%), hsl(220 47% 25%)); /* Night Blue accent */
     --gradient-surface: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 20% 94%)); /* Light surface gradient */
 
