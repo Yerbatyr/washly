@@ -79,10 +79,10 @@ const HeroSection = () => {
           </div>
 
           {/* Risk Reversal */}
-          <div className="bg-black/85 backdrop-blur-md border border-primary/30 rounded-2xl p-6 max-w-2xl mx-auto">
+          <div className="bg-black/85 backdrop-blur-md border border-green-500/40 rounded-2xl p-6 max-w-2xl mx-auto shadow-[0_0_30px_rgba(34,197,94,0.3)]">
             <div className="flex items-center justify-center gap-3 mb-3">
-              <Shield className="w-6 h-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,1)]" aria-hidden="true" />
-              <span className="text-lg font-bold text-white drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ</span>
+              <Shield className="w-6 h-6 text-green-400 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]" aria-hidden="true" />
+              <span className="text-lg font-bold text-green-400 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ</span>
             </div>
             <p className="text-white text-sm drop-shadow-[0_4px_10px_rgba(0,0,0,1)]">
               Если не сэкономите минимум 30,000₸ в первый месяц - вернем ВСЕ деньги. Без вопросов.
