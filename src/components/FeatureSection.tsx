@@ -6,37 +6,37 @@ const FeatureSection = () => {
     {
       icon: <QrCode className="w-8 h-8" />,
       title: "QR-доступ",
-      description: "Динамические QR-коды, обновляющиеся каждые 60 секунд для максимальной безопасности. Просто отсканируйте и мойтесь!",
+      description: "Просто отсканируйте QR-код и начните мойку. Быстро и безопасно.",
       gradient: "from-primary to-primary-glow"
     },
     {
       icon: <MapPin className="w-8 h-8" />,
       title: "50+ локаций",
-      description: "Найдите ближайшие станции с информацией о доступности в реальном времени, маршрутами и ожидаемым временем ожидания.",
+      description: "Найдите ближайшую станцию на карте и посмотрите доступность в реальном времени.",
       gradient: "from-accent to-accent-hover"
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Мобильное приоритет",
-      description: "Бесшовный опыт на iOS и Android с возможностями работы без интернета и push-уведомлениями.",
+      title: "Удобное приложение",
+      description: "Работает на iOS и Android. Доступно даже без интернета.",
       gradient: "from-accent to-secondary"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Безопасные платежи",
-      description: "Интеграция с Kaspi Pay и поддержка Stripe в качестве резерва. Ваши платёжные данные всегда защищены.",
+      description: "Kaspi Pay и банковские карты. Ваши деньги под защитой.",
       gradient: "from-primary to-accent"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Молниеносно быстро",
-      description: "Среднее время мойки менее 30 минут с экспресс-полосами для подписчиков.",
+      title: "Быстрая мойка",
+      description: "Мойка занимает менее 30 минут. Экспресс-полоса для подписчиков.",
       gradient: "from-accent to-primary-hover"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Реферальные награды",
-      description: "Зарабатывайте бесплатные месяцы, приглашая друзей. Делитесь любовью и экономьте деньги!",
+      title: "Приглашай друзей",
+      description: "Получайте бесплатные месяцы за каждого приглашенного друга.",
       gradient: "from-primary to-secondary"
     }
   ];
