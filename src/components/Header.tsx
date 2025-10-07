@@ -35,33 +35,33 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 sm:gap-3" aria-label="Washly - Главная страница">
             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-primary rounded-xl flex items-center justify-center" aria-hidden="true">
-              <QrCode className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
+              <QrCode className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div className="text-xl sm:text-2xl font-black">
               <span className="text-primary">Wash</span>
-              <span className="text-foreground">ly</span>
+              <span className="text-white">ly</span>
             </div>
           </Link>
 
           {/* Navigation - Hidden on mobile */}
           <nav className="hidden md:flex items-center gap-8" aria-label="Основная навигация">
-            <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">
               Главная
             </Link>
-            <a href="#features" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            <a href="#features" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">
               Преимущества
             </a>
-            <a href="#pricing" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            <a href="#pricing" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">
               Тарифы
             </a>
-            <Link to="/partners" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/partners" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">
               Партнерам
             </Link>
           </nav>
 
           {/* CTA Buttons */}
           <div className="flex items-center gap-1 sm:gap-3">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex text-xs sm:text-sm px-2 sm:px-4">
+            <Button variant="ghost" size="sm" className="hidden sm:inline-flex text-xs sm:text-sm px-2 sm:px-4 text-white/80 hover:text-white">
               Войти
             </Button>
             
@@ -82,28 +82,28 @@ const Header = () => {
                 <nav className="flex flex-col gap-4 mt-8" aria-label="Мобильная навигация">
                   <Link 
                     to="/" 
-                    className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+                    className="text-base font-semibold text-foreground hover:text-primary transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Главная
                   </Link>
                   <a 
                     href="#features" 
-                    className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+                    className="text-base font-semibold text-foreground hover:text-primary transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Преимущества
                   </a>
                   <a 
                     href="#pricing" 
-                    className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+                    className="text-base font-semibold text-foreground hover:text-primary transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Тарифы
                   </a>
                   <Link 
                     to="/partners" 
-                    className="text-base font-medium text-foreground hover:text-primary transition-colors py-2"
+                    className="text-base font-semibold text-foreground hover:text-primary transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Партнерам
