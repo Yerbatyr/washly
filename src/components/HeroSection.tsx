@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-hero opacity-10" aria-hidden="true" />
       
       {/* Hero Video with proper accessibility */}
-      <div className="absolute inset-0 opacity-30" aria-hidden="true">
+      <div className="absolute inset-0 opacity-60" aria-hidden="true">
         <video 
           src={heroVideo} 
           autoPlay 
