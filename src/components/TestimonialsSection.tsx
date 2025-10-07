@@ -153,10 +153,6 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Градиенты по краям для плавного исчезновения */}
-      <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent pointer-events-none z-10" />
-      <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background to-transparent pointer-events-none z-10" />
     </section>
   );
 };
