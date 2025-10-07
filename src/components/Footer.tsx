@@ -38,7 +38,7 @@ const Footer = () => {
           
           {/* Product */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Продукт</h4>
+            <h3 className="font-semibold text-foreground mb-4">Продукт</h3>
             <nav aria-label="Продукт">
               <ul className="space-y-2 text-sm">
                 <li>
@@ -67,7 +67,7 @@ const Footer = () => {
           
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Компания</h4>
+            <h3 className="font-semibold text-foreground mb-4">Компания</h3>
             <nav aria-label="Компания">
               <ul className="space-y-2 text-sm">
                 <li>
@@ -96,7 +96,7 @@ const Footer = () => {
           
           {/* Support */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Поддержка</h4>
+            <h3 className="font-semibold text-foreground mb-4">Поддержка</h3>
             <nav aria-label="Поддержка">
               <ul className="space-y-2 text-sm">
                 <li>
