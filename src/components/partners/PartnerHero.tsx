@@ -22,7 +22,7 @@ const PartnerHero = () => {
       >
         <source src={partnerHeroVideo} type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/70" />
       <div className="container mx-auto px-4 relative">
         <div className="max-w-5xl mx-auto text-center">
           <Badge variant="secondary" className="mt-16 mb-6 px-6 py-3 text-sm font-bold border border-primary/20 animate-fade-in">
