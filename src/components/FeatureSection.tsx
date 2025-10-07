@@ -30,7 +30,7 @@ const FeatureSection = () => {
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Молниеносно быстро",
-      description: "Среднее время мойки менее 15 минут с экспресс-полосами для подписчиков.",
+      description: "Среднее время мойки менее 30 минут с экспресс-полосами для подписчиков.",
       gradient: "from-accent to-primary-hover"
     },
     {
