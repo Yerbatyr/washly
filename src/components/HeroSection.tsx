@@ -5,21 +5,20 @@ import heroVideo from "@/assets/hero-car-wash-video.mp4";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden pt-20 pb-32 bg-black" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }} aria-labelledby="hero-heading">
+    <section className="relative overflow-hidden pt-20 pb-32 bg-black" style={{ width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }} aria-labelledby="hero-heading">
       {/* Hero Video with proper accessibility */}
-      <div className="absolute inset-0 h-full opacity-80" style={{ width: '100vw', left: 0, right: 0 }} aria-hidden="true">
+      <div className="absolute opacity-80" style={{ top: 0, left: 0, width: '100vw', height: '100%', margin: 0, padding: 0 }} aria-hidden="true">
         <video 
           src={heroVideo} 
           autoPlay 
           loop 
           muted 
           playsInline
-          className="w-full h-full object-cover"
-          style={{ margin: 0, padding: 0, display: 'block' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', margin: 0, padding: 0, display: 'block' }}
         />
       </div>
       
-      <div className="w-full relative px-4">
+      <div className="w-full relative px-4" style={{ maxWidth: '100%' }}>
         <div className="max-w-4xl mx-auto text-center">
           {/* Problem/Pain Hook */}
           <Badge variant="secondary" className="mt-16 mb-10 px-6 py-3 text-sm font-bold border border-primary/30 bg-black/70 backdrop-blur-md text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">

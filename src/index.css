@@ -156,6 +156,13 @@ All colors MUST be HSL.
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
+  #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight;
   }
