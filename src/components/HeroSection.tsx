@@ -36,7 +36,7 @@ const HeroSection = () => {
           {/* Main Headline - Problem Focused */}
           <h1 id="hero-heading" className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,1)]">
             Как мыть машину 
-            <span className="text-gradient-hero block drop-shadow-[0_4px_20px_rgba(0,0,0,1)]">БЕЗЛИМИТНО</span>
+            <span className="bg-gradient-to-r from-green-500 via-green-300 to-green-500 bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] block drop-shadow-[0_4px_20px_rgba(0,0,0,1)]">БЕЗЛИМИТНО</span>
             за 15,000₸ в месяц
           </h1>
           
