@@ -52,9 +52,10 @@ const PartnerHero = () => {
           </div>
           
           <div className="space-y-4 mb-8 animate-fade-in">
-            <Button variant="default" size="lg" className="w-full sm:w-auto px-4 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-xl font-bold shadow-lg hover:shadow-xl transition-all">
-              <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 sm:mr-3" />
+            <Button variant="default" size="lg" className="w-full sm:w-auto px-4 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-xl font-bold shadow-lg hover:shadow-xl transition-all animate-pulse">
+              <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 sm:mr-3 text-green-400" />
               СТАТЬ ПАРТНЕРОМ WASHLY
+              <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ml-2 sm:ml-3 text-green-400" />
             </Button>
             <p className="text-xs sm:text-sm text-white/70 px-2">
               ⚡ Подключение за 24 часа • 🎯 Первая неделя БЕСПЛАТНО • 💰 Без стартовых взносов
