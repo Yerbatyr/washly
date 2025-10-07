@@ -5,9 +5,9 @@ import heroVideo from "@/assets/hero-car-wash-video.mp4";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden pt-20 pb-32 bg-black w-screen" aria-labelledby="hero-heading">
+    <section className="relative overflow-hidden pt-20 pb-32 bg-black" style={{ width: '100vw', marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }} aria-labelledby="hero-heading">
       {/* Hero Video with proper accessibility */}
-      <div className="absolute inset-0 w-screen h-full opacity-80" aria-hidden="true">
+      <div className="absolute inset-0 h-full opacity-80" style={{ width: '100vw', left: 0, right: 0 }} aria-hidden="true">
         <video 
           src={heroVideo} 
           autoPlay 
@@ -15,11 +15,11 @@ const HeroSection = () => {
           muted 
           playsInline
           className="w-full h-full object-cover"
-          style={{ margin: 0, padding: 0 }}
+          style={{ margin: 0, padding: 0, display: 'block' }}
         />
       </div>
       
-      <div className="w-full relative">
+      <div className="w-full relative px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Problem/Pain Hook */}
           <Badge variant="secondary" className="mt-16 mb-10 px-6 py-3 text-sm font-bold border border-primary/30 bg-black/70 backdrop-blur-md text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
