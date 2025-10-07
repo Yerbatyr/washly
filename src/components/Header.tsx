@@ -30,8 +30,8 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-border/20" role="banner">
-      <div className="container mx-auto px-2 sm:px-4">
-        <div className="flex items-center justify-between h-14 sm:h-16">
+      <div className="w-full px-2 sm:px-4">
+        <div className="flex items-center justify-between h-14 sm:h-16 max-w-7xl mx-auto">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 sm:gap-3" aria-label="Washly - Главная страница">
             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-primary rounded-xl flex items-center justify-center" aria-hidden="true">
