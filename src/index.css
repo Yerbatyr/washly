@@ -35,7 +35,7 @@ All colors MUST be HSL.
     --muted: 220 20% 94%;             /* Light Blue Grey */
     --muted-foreground: 220 47% 25%;  /* Medium Navy for text on light */
 
-    --destructive: 0 85% 65%;         /* Modern Red */
+    --destructive: 0 70% 45%;         /* Accessible Dark Red - WCAG AA compliant */
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 30% 90%;            /* Light Blue Grey borders */
