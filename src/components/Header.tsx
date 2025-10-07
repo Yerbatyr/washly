@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { QrCode, Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import { QRCodeSVG } from "qrcode.react";
 
 const partnerMessages = [
   "💰 Заработайте 1,500,000₸+ в месяц",
@@ -27,6 +29,9 @@ const Header = () => {
   const location = useLocation();
   const isPartnersPage = location.pathname === '/partners';
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [qrDialogOpen, setQrDialogOpen] = useState(false);
+  
+  const appDownloadUrl = "https://washly.app/download"; // Replace with actual app download URL
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-border/20" role="banner">
@@ -65,10 +70,16 @@ const Header = () => {
               Войти
             </Button>
             
-            <Button variant="hero" size="sm" className="font-bold text-xs sm:text-sm px-2 sm:px-4" aria-label="Начать экономить с Washly">
+            <Button 
+              variant="hero" 
+              size="sm" 
+              className="font-bold text-xs sm:text-sm px-2 sm:px-4" 
+              aria-label="Скачать приложение Washly"
+              onClick={() => setQrDialogOpen(true)}
+            >
               <QrCode className="w-3 h-3 sm:w-4 sm:h-4" aria-hidden="true" />
-              <span className="hidden sm:inline ml-1 sm:ml-2">НАЧАТЬ</span>
-              <span className="hidden md:inline ml-1">ЭКОНОМИТЬ</span>
+              <span className="hidden sm:inline ml-1 sm:ml-2">СКАЧАТЬ</span>
+              <span className="hidden md:inline ml-1">ПРИЛОЖЕНИЕ</span>
             </Button>
 
             {/* Mobile menu */}
@@ -121,6 +132,31 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      {/* QR Code Dialog */}
+      <Dialog open={qrDialogOpen} onOpenChange={setQrDialogOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-bold text-center">Скачать приложение Washly</DialogTitle>
+            <DialogDescription className="text-center">
+              Отсканируйте QR-код камерой телефона
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex flex-col items-center justify-center gap-6 py-6">
+            <div className="p-6 bg-white rounded-2xl shadow-lg">
+              <QRCodeSVG 
+                value={appDownloadUrl}
+                size={200}
+                level="H"
+                includeMargin={true}
+              />
+            </div>
+            <p className="text-sm text-muted-foreground text-center max-w-xs">
+              Наведите камеру телефона на QR-код для скачивания приложения
+            </p>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       {/* Urgency Bar */}
       {isPartnersPage ? (
