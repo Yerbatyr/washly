@@ -58,7 +58,7 @@ const PartnerBenefits = () => {
                   backgroundBlendMode: 'overlay'
                 } : {}}
               >
-                {index === 3 && <div className="absolute inset-0 bg-card/95 backdrop-blur-sm" />}
+                {index === 3 && <div className="absolute inset-0 bg-card/70" />}
                 <div className="space-y-6 relative z-10">
                   <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${benefit.gradient} p-5 text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg`}>
                     {benefit.icon}
