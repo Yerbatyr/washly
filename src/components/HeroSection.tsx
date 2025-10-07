@@ -21,8 +21,8 @@ const HeroSection = () => {
       <div className="w-full px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           {/* Problem/Pain Hook */}
-          <Badge variant="secondary" className="mt-16 mb-10 px-6 py-3 text-sm font-bold border border-primary/20">
-            <Sparkles className="w-4 h-4 mr-2" aria-hidden="true" />
+          <Badge variant="secondary" className="mt-16 mb-10 px-6 py-3 text-sm font-bold border border-primary/30 bg-black/70 backdrop-blur-md text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+            <Sparkles className="w-4 h-4 mr-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]" aria-hidden="true" />
             ПРЕКРАТИТЕ ПЕРЕПЛАЧИВАТЬ ЗА МОЙКУ
           </Badge>
           
