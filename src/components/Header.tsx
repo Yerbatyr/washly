@@ -38,7 +38,7 @@ const Header = () => {
               <QrCode className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div className="text-xl sm:text-2xl font-black">
-              <span className="text-primary">Wash</span>
+              <span className="text-white">Wash</span>
               <span className="text-white">ly</span>
             </div>
           </Link>
