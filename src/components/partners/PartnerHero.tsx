@@ -44,7 +44,7 @@ const PartnerHero = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto">
             {successStats.map((stat, index) => (
               <div key={index} className="text-center animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
-                <div className="text-3xl lg:text-4xl font-black text-white mb-2">{stat.number}</div>
+                <div className="text-3xl lg:text-4xl font-black text-green-400 mb-2">{stat.number}</div>
                 <div className="text-sm text-white/80 uppercase tracking-wide font-semibold">{stat.label}</div>
                 <div className="text-xs text-white/60">{stat.sublabel}</div>
               </div>
