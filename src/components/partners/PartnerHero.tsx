@@ -32,7 +32,7 @@ const PartnerHero = () => {
           
           <h1 className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] animate-fade-in">
             Как зарабатывать
-            <span className="bg-gradient-to-r from-primary via-white to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] block">1,500,000₸+</span>
+            <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] block">1,500,000₸+</span>
             в месяц на автомойке
           </h1>
           
