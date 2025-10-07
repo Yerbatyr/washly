@@ -1,22 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, QrCode, Shield } from "lucide-react";
-import heroVideo from "@/assets/hero-car-wash-video.mp4";
+import heroImage from "@/assets/hero-car-wash.jpg";
 
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden pt-20 pb-32 bg-background" aria-labelledby="hero-heading">
       <div className="absolute inset-0 bg-gradient-hero opacity-10" aria-hidden="true" />
       
-      {/* Hero Video with proper accessibility */}
+      {/* Hero Image with proper accessibility */}
       <div className="absolute inset-0 opacity-5" aria-hidden="true">
-        <video 
-          src={heroVideo} 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
+        <img 
+          src={heroImage} 
+          alt="" 
           className="w-full h-full object-cover"
+          loading="eager"
         />
       </div>
       
