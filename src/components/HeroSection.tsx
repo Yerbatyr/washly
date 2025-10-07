@@ -5,9 +5,9 @@ import heroVideo from "@/assets/hero-car-wash-video.mp4";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden pt-20 pb-32 bg-black w-full" aria-labelledby="hero-heading">
+    <section className="relative overflow-hidden pt-20 pb-32 bg-black w-screen" aria-labelledby="hero-heading">
       {/* Hero Video with proper accessibility */}
-      <div className="absolute inset-0 w-full h-full opacity-80" aria-hidden="true">
+      <div className="absolute inset-0 w-screen h-full opacity-80" aria-hidden="true">
         <video 
           src={heroVideo} 
           autoPlay 
