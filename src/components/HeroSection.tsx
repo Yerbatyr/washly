@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden pt-20 pb-32 bg-black" style={{ width: '100vw', position: 'relative', left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }} aria-labelledby="hero-heading">
       {/* Hero Video with proper accessibility */}
-      <div className="absolute opacity-80" style={{ top: 0, left: 0, width: '100vw', height: '100%', margin: 0, padding: 0 }} aria-hidden="true">
+      <div className="absolute opacity-50" style={{ top: 0, left: 0, width: '100vw', height: '100%', margin: 0, padding: 0 }} aria-hidden="true">
         <video 
           src={heroVideo} 
           autoPlay 
@@ -18,25 +18,28 @@ const HeroSection = () => {
         />
       </div>
       
+      {/* Dark overlay for better text visibility */}
+      <div className="absolute inset-0 bg-black/40" style={{ width: '100vw', height: '100%' }} aria-hidden="true" />
+      
       <div className="w-full relative px-4" style={{ maxWidth: '100%' }}>
         <div className="max-w-4xl mx-auto text-center">
           {/* Problem/Pain Hook */}
-          <Badge variant="secondary" className="mt-16 mb-10 px-6 py-3 text-sm font-bold border border-primary/30 bg-black/70 backdrop-blur-md text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
-            <Sparkles className="w-4 h-4 mr-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]" aria-hidden="true" />
+          <Badge variant="secondary" className="mt-16 mb-10 px-6 py-3 text-sm font-bold border border-primary/30 bg-black/90 backdrop-blur-md text-white drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
+            <Sparkles className="w-4 h-4 mr-2 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]" aria-hidden="true" />
             ПРЕКРАТИТЕ ПЕРЕПЛАЧИВАТЬ ЗА МОЙКУ
           </Badge>
           
           {/* Main Headline - Problem Focused */}
-          <h1 id="hero-heading" className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+          <h1 id="hero-heading" className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,1)]">
             Как мыть машину 
-            <span className="text-gradient-hero block drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">БЕЗЛИМИТНО</span>
+            <span className="text-gradient-hero block drop-shadow-[0_4px_20px_rgba(0,0,0,1)]">БЕЗЛИМИТНО</span>
             за 15,000₸ в месяц
           </h1>
           
           {/* Value Proposition */}
-          <p className="text-xl lg:text-2xl text-white/90 mb-8 font-medium max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+          <p className="text-xl lg:text-2xl text-white mb-8 font-medium max-w-3xl mx-auto drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
             Вместо того чтобы платить 2,500₸ за каждую мойку (75,000₸+ в месяц), 
-            получите <span className="text-primary font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">БЕЗЛИМИТНЫЙ</span> доступ к 50+ премиальным станциям
+            получите <span className="text-primary font-bold drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">БЕЗЛИМИТНЫЙ</span> доступ к 50+ премиальным станциям
           </p>
 
           {/* Social Proof Numbers */}
@@ -72,12 +75,12 @@ const HeroSection = () => {
           </div>
 
           {/* Risk Reversal */}
-          <div className="bg-black/60 backdrop-blur-md border border-primary/30 rounded-2xl p-6 max-w-2xl mx-auto">
+          <div className="bg-black/85 backdrop-blur-md border border-primary/30 rounded-2xl p-6 max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-3">
-              <Shield className="w-6 h-6 text-primary drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]" aria-hidden="true" />
-              <span className="text-lg font-bold text-primary drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ</span>
+              <Shield className="w-6 h-6 text-primary drop-shadow-[0_4px_12px_rgba(0,0,0,1)]" aria-hidden="true" />
+              <span className="text-lg font-bold text-primary drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ</span>
             </div>
-            <p className="text-white/90 text-sm drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
+            <p className="text-white text-sm drop-shadow-[0_4px_10px_rgba(0,0,0,1)]">
               Если не сэкономите минимум 30,000₸ в первый месяц - вернем ВСЕ деньги. Без вопросов.
             </p>
           </div>
