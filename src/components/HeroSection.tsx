@@ -27,31 +27,31 @@ const HeroSection = () => {
           </Badge>
           
           {/* Main Headline - Problem Focused */}
-          <h1 id="hero-heading" className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9]">
+          <h1 id="hero-heading" className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
             Как мыть машину 
-            <span className="text-gradient-hero block">БЕЗЛИМИТНО</span>
+            <span className="text-gradient-hero block drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">БЕЗЛИМИТНО</span>
             за 15,000₸ в месяц
           </h1>
           
           {/* Value Proposition */}
-          <p className="text-xl lg:text-2xl text-muted-foreground mb-8 font-medium max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl text-white/90 mb-8 font-medium max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             Вместо того чтобы платить 2,500₸ за каждую мойку (75,000₸+ в месяц), 
-            получите <span className="text-primary font-bold">БЕЗЛИМИТНЫЙ</span> доступ к 50+ премиальным станциям
+            получите <span className="text-primary font-bold drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">БЕЗЛИМИТНЫЙ</span> доступ к 50+ премиальным станциям
           </p>
 
           {/* Social Proof Numbers */}
           <div className="grid grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto" role="group" aria-label="Статистика Washly">
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-2" aria-label="Более 10 тысяч">10К+</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wide">Довольных клиентов</div>
+              <div className="text-4xl font-black text-primary mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]" aria-label="Более 10 тысяч">10К+</div>
+              <div className="text-sm text-white/80 uppercase tracking-wide drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">Довольных клиентов</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-2" aria-label="Более 50">50+</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wide">Элитных станций</div>
+              <div className="text-4xl font-black text-primary mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]" aria-label="Более 50">50+</div>
+              <div className="text-sm text-white/80 uppercase tracking-wide drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">Элитных станций</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-primary mb-2">24/7</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wide">Доступ</div>
+              <div className="text-4xl font-black text-primary mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">24/7</div>
+              <div className="text-sm text-white/80 uppercase tracking-wide drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">Доступ</div>
             </div>
           </div>
           
@@ -66,18 +66,18 @@ const HeroSection = () => {
               <QrCode className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 sm:mr-3" aria-hidden="true" />
               ПОЛУЧИТЬ БЕЗЛИМИТ СЕЙЧАС
             </Button>
-            <p className="text-xs sm:text-sm text-muted-foreground px-2">
+            <p className="text-xs sm:text-sm text-white/80 px-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
               <span aria-hidden="true">⚡</span> Активация за 2 минуты <span aria-hidden="true">•</span> <span aria-hidden="true">🎯</span> Первая мойка БЕСПЛАТНО
             </p>
           </div>
 
           {/* Risk Reversal */}
-          <div className="bg-card border border-primary/20 rounded-2xl p-6 max-w-2xl mx-auto">
+          <div className="bg-black/60 backdrop-blur-md border border-primary/30 rounded-2xl p-6 max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-3">
-              <Shield className="w-6 h-6 text-primary" aria-hidden="true" />
-              <span className="text-lg font-bold text-primary">ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ</span>
+              <Shield className="w-6 h-6 text-primary drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]" aria-hidden="true" />
+              <span className="text-lg font-bold text-primary drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ</span>
             </div>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-white/90 text-sm drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
               Если не сэкономите минимум 30,000₸ в первый месяц - вернем ВСЕ деньги. Без вопросов.
             </p>
           </div>
