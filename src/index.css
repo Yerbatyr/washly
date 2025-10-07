@@ -274,6 +274,15 @@ All colors MUST be HSL.
     }
   }
 
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
   .animate-scroll-banner {
     animation: scroll-banner 12s linear infinite;
   }
