@@ -36,7 +36,7 @@ const FeatureSection = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Приглашай друзей",
-      description: "Получайте бесплатные месяцы за каждого приглашенного друга.",
+      description: "Получайте бесплатную мойку за каждого приглашенного друга.",
       gradient: "from-primary to-secondary"
     }
   ];
