@@ -267,6 +267,15 @@ All colors MUST be HSL.
     }
   }
 
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
   .animate-scroll-banner {
     animation: scroll-banner 12s linear infinite;
   }
