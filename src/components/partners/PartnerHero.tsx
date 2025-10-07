@@ -24,7 +24,7 @@ const PartnerHero = () => {
       </video>
       <div className="absolute inset-0 bg-black/70" />
       <div className="container mx-auto px-4 relative">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center text-white [&_*]:drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
           <Badge variant="secondary" className="mt-16 mb-6 px-6 py-3 text-sm font-bold border border-primary/20 animate-fade-in">
             <Zap className="w-4 h-4 mr-2" />
             ТОЛЬКО ДЛЯ ВЛАДЕЛЬЦЕВ АВТОМОЕК
@@ -36,7 +36,7 @@ const PartnerHero = () => {
             в месяц на автомойке
           </h1>
           
-          <p className="text-xl lg:text-2xl text-muted-foreground mb-8 font-medium max-w-4xl mx-auto animate-fade-in">
+          <p className="text-xl lg:text-2xl text-white/90 mb-8 font-medium max-w-4xl mx-auto animate-fade-in">
             Забудьте про пустые дни и проблемы с персоналом. <span className="text-primary font-bold">Washly</span> 
             привлечет <span className="text-primary font-bold">10,000+ готовых платить клиентов</span> прямо к вашей мойке
           </p>
@@ -45,8 +45,8 @@ const PartnerHero = () => {
             {successStats.map((stat, index) => (
               <div key={index} className="text-center animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <div className="text-3xl lg:text-4xl font-black text-primary mb-2">{stat.number}</div>
-                <div className="text-sm text-muted-foreground uppercase tracking-wide font-semibold">{stat.label}</div>
-                <div className="text-xs text-muted-foreground/60">{stat.sublabel}</div>
+                <div className="text-sm text-white/80 uppercase tracking-wide font-semibold">{stat.label}</div>
+                <div className="text-xs text-white/60">{stat.sublabel}</div>
               </div>
             ))}
           </div>
@@ -56,7 +56,7 @@ const PartnerHero = () => {
               <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 sm:mr-3" />
               СТАТЬ ПАРТНЕРОМ WASHLY
             </Button>
-            <p className="text-xs sm:text-sm text-muted-foreground px-2">
+            <p className="text-xs sm:text-sm text-white/70 px-2">
               ⚡ Подключение за 24 часа • 🎯 Первая неделя БЕСПЛАТНО • 💰 Без стартовых взносов
             </p>
           </div>
@@ -66,7 +66,7 @@ const PartnerHero = () => {
               <Shield className="w-6 h-6 text-primary" />
               <span className="text-lg font-bold text-primary">ГАРАНТИЯ РЕЗУЛЬТАТА</span>
             </div>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-white/80 text-sm">
               Если не увеличим ваш поток клиентов минимум в 2 раза за первый месяц - 
               работаем БЕСПЛАТНО до достижения результата
             </p>
