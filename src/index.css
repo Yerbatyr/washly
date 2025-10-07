@@ -294,6 +294,17 @@ All colors MUST be HSL.
     }
   }
 
+  @keyframes buttonGlow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(34, 197, 94, 0.4), 0 0 40px rgba(34, 197, 94, 0.2);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(34, 197, 94, 0.8), 0 0 80px rgba(34, 197, 94, 0.6), 0 0 120px rgba(34, 197, 94, 0.4);
+      transform: scale(1.03);
+    }
+  }
+
   .animate-scroll-banner {
     animation: scroll-banner 12s linear infinite;
   }
