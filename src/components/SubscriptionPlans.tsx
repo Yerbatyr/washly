@@ -157,7 +157,7 @@ const SubscriptionPlans = () => {
                   size="lg" 
                   className={`w-full font-black text-sm sm:text-base md:text-lg py-3 sm:py-4 md:py-6 ${
                     plan.popular 
-                      ? 'bg-primary hover:bg-primary-hover text-primary-foreground shadow-primary animate-pulse' 
+                      ? 'bg-green-500 hover:bg-green-600 text-white shadow-[0_0_30px_rgba(34,197,94,0.6)] animate-[buttonGlow_2s_ease-in-out_infinite]' 
                       : index === 0
                         ? 'bg-destructive/10 border-destructive text-destructive hover:bg-destructive/20'
                         : ''
