@@ -71,14 +71,14 @@ const Footer = () => {
             <nav aria-label="Компания">
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                     О нас
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#careers" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/careers" className="text-muted-foreground hover:text-primary transition-colors">
                     Карьера
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/partners" className="text-muted-foreground hover:text-primary transition-colors">
@@ -100,24 +100,24 @@ const Footer = () => {
             <nav aria-label="Поддержка">
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#help" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/help" className="text-muted-foreground hover:text-primary transition-colors">
                     Центр помощи
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                     Контакты
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#terms" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">
                     Условия использования
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#privacy" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
                     Политика конфиденциальности
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
