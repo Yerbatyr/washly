@@ -49,15 +49,15 @@ const HeroSection = () => {
           {/* Social Proof Numbers */}
           <div className="grid grid-cols-3 gap-8 mb-12 max-w-2xl mx-auto" role="group" aria-label="Статистика Washly">
             <div className="text-center">
-              <div className="text-4xl font-black text-white mb-2 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]" aria-label="Более 10 тысяч">10К+</div>
+              <div className="text-4xl font-black text-green-400 mb-2 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]" aria-label="Более 10 тысяч">10К+</div>
               <div className="text-sm text-white/80 uppercase tracking-wide drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">Довольных клиентов</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-white mb-2 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]" aria-label="Более 50">50+</div>
+              <div className="text-4xl font-black text-green-400 mb-2 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]" aria-label="Более 50">50+</div>
               <div className="text-sm text-white/80 uppercase tracking-wide drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">Элитных станций</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-black text-white mb-2 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">24/7</div>
+              <div className="text-4xl font-black text-green-400 mb-2 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">24/7</div>
               <div className="text-sm text-white/80 uppercase tracking-wide drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">Доступ</div>
             </div>
           </div>
