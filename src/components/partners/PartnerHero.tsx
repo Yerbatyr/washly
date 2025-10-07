@@ -61,12 +61,12 @@ const PartnerHero = () => {
             </p>
           </div>
 
-          <div className="bg-card border border-primary/20 rounded-2xl p-6 max-w-3xl mx-auto shadow-lg animate-fade-in">
+          <div className="bg-gradient-to-br from-green-900/30 to-emerald-900/30 border-2 border-green-500/40 rounded-2xl p-6 max-w-3xl mx-auto shadow-lg shadow-green-500/20 animate-fade-in backdrop-blur-sm">
             <div className="flex items-center justify-center gap-3 mb-3">
-              <Shield className="w-6 h-6 text-primary" />
-              <span className="text-lg font-bold text-primary">ГАРАНТИЯ РЕЗУЛЬТАТА</span>
+              <Shield className="w-6 h-6 text-green-400" />
+              <span className="text-lg font-bold text-green-400">ГАРАНТИЯ РЕЗУЛЬТАТА</span>
             </div>
-            <p className="text-white/80 text-sm">
+            <p className="text-white text-sm">
               Если не увеличим ваш поток клиентов минимум в 2 раза за первый месяц - 
               работаем БЕСПЛАТНО до достижения результата
             </p>
