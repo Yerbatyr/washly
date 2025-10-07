@@ -18,6 +18,10 @@ const PartnerHero = () => {
         loop
         muted
         playsInline
+        onError={(e) => {
+          // Gracefully handle video loading errors
+          e.currentTarget.style.display = 'none';
+        }}
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src={partnerHeroVideo} type="video/mp4" />

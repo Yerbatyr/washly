@@ -14,6 +14,10 @@ const HeroSection = () => {
           loop 
           muted 
           playsInline
+          onError={(e) => {
+            // Gracefully handle video loading errors
+            e.currentTarget.style.display = 'none';
+          }}
           style={{ width: '100%', height: '100%', objectFit: 'cover', margin: 0, padding: 0, display: 'block' }}
         />
       </div>
