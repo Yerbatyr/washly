@@ -107,7 +107,7 @@ const Index = () => {
                     variant="default" 
                     size="xl" 
                     className="w-full sm:w-auto px-4 sm:px-8 md:px-16 py-3 sm:py-5 md:py-8 text-sm sm:text-lg md:text-2xl font-black bg-card text-primary hover:bg-card/90 border-2 sm:border-4 border-card"
-                    aria-label="Активировать безлимитную подписку на мойку"
+                    aria-label="Активировать безлимит сейчас"
                   >
                     <Zap className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mr-2 sm:mr-3 md:mr-4" aria-hidden="true" />
                     АКТИВИРОВАТЬ БЕЗЛИМИТ СЕЙЧАС

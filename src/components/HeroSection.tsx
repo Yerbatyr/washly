@@ -68,7 +68,7 @@ const HeroSection = () => {
               variant="hero" 
               size="xl" 
               className="w-full sm:w-auto px-4 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-xl font-bold"
-              aria-label="Получить безлимитную подписку на мойку автомобиля"
+              aria-label="Получить безлимит сейчас"
             >
               <QrCode className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 sm:mr-3" aria-hidden="true" />
               ПОЛУЧИТЬ БЕЗЛИМИТ СЕЙЧАС
