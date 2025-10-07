@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { QrCode, Mail, Phone, MapPin } from "lucide-react";
+import { QrCode, Mail, Phone, MapPin, Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -32,6 +32,49 @@ const Footer = () => {
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4" aria-hidden="true" />
                 <span>Алматы, Казахстан</span>
+              </div>
+            </div>
+            
+            {/* Social Media */}
+            <div className="mt-6">
+              <p className="text-sm font-semibold text-foreground mb-3">Следите за нами</p>
+              <div className="flex gap-3">
+                <a 
+                  href="https://instagram.com/washly" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center group"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
+                <a 
+                  href="https://facebook.com/washly" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center group"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
+                <a 
+                  href="https://twitter.com/washly" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center group"
+                  aria-label="Twitter"
+                >
+                  <Twitter className="w-4 h-4" />
+                </a>
+                <a 
+                  href="https://youtube.com/@washly" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center group"
+                  aria-label="YouTube"
+                >
+                  <Youtube className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </div>
