@@ -4,7 +4,7 @@ import partnerHeroVideo from "@/assets/partner-hero-video.mp4";
 
 const PartnerHero = () => {
   return (
-    <section className="relative overflow-hidden pt-20 pb-32 bg-background">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center bg-background">
       <video
         autoPlay
         loop
@@ -20,7 +20,7 @@ const PartnerHero = () => {
       </video>
       <div className="container mx-auto px-4 relative">
         <div className="max-w-5xl mx-auto text-center text-white [&_*]:drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-          <Badge variant="secondary" className="mt-16 mb-6 px-6 py-3 text-sm font-bold border border-primary/20 animate-fade-in">
+          <Badge variant="secondary" className="mb-6 px-6 py-3 text-sm font-bold border border-primary/20 animate-fade-in">
             <Zap className="w-4 h-4 mr-2" />
             ТОЛЬКО ДЛЯ ВЛАДЕЛЬЦЕВ АВТОМОЕК
           </Badge>
