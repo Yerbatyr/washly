@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import StructuredData from "@/components/StructuredData";
 import PartnerScrollingBanner from "@/components/partners/PartnerScrollingBanner";
 import PartnerHero from "@/components/partners/PartnerHero";
+import PartnerStats from "@/components/partners/PartnerStats";
 import PartnerBenefits from "@/components/partners/PartnerBenefits";
 import PartnerTestimonials from "@/components/partners/PartnerTestimonials";
 import BusinessModel from "@/components/partners/BusinessModel";
@@ -24,6 +25,7 @@ const Partners = () => {
         <Header />
         <PartnerScrollingBanner />
         <PartnerHero />
+        <PartnerStats />
         <PartnerBenefits />
         <PartnerTestimonials />
         <BusinessModel />
