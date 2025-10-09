@@ -21,8 +21,12 @@ const testimonials = [
 
 const PartnerTestimonials = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-to-br from-muted/20 via-background to-muted/20 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
+      </div>
+      <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
             Истории <span className="text-primary">успеха</span> наших партнеров

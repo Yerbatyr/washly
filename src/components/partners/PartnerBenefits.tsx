@@ -31,8 +31,9 @@ const benefits = [
 
 const PartnerBenefits = () => {
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-to-b from-background via-primary/[0.02] to-background relative overflow-hidden">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,transparent_0%,rgba(220,47,16,0.02)_50%,transparent_100%)]" />
+      <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
             Что получают наши <span className="text-primary">партнеры</span>

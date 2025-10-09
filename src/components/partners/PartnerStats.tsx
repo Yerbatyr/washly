@@ -10,8 +10,10 @@ const successStats = [
 
 const PartnerStats = () => {
   return (
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-gradient-to-br from-background via-muted/30 to-background relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(34,197,94,0.05),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,60,30,0.03),transparent_50%)]" />
+      <div className="container mx-auto px-4 relative">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-xl lg:text-2xl mb-12 font-medium max-w-4xl mx-auto animate-fade-in">
             Забудьте про пустые дни и проблемы с персоналом. <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] font-bold">Washly</span>{" "}
