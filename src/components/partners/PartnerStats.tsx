@@ -15,10 +15,17 @@ const PartnerStats = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,60,30,0.03),transparent_50%)]" />
       <div className="container mx-auto px-4 relative">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-xl lg:text-2xl mb-12 font-medium max-w-4xl mx-auto animate-fade-in">
-            Забудьте про пустые дни и проблемы с персоналом. <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] font-bold">Washly</span>{" "}
-            привлечет <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] font-bold">10,000+ готовых платить клиентов</span> прямо к вашей мойке
-          </p>
+          <div className="text-center mb-12 space-y-4 animate-fade-in">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground">
+              Забудьте про пустые дни и проблемы с персоналом
+            </h2>
+            <p className="text-xl lg:text-2xl font-medium">
+              <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-primary bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] font-bold">Washly привлечет 10,000+ готовых платить клиентов</span>
+            </p>
+            <p className="text-lg lg:text-xl text-muted-foreground font-medium">
+              прямо к вашей мойке
+            </p>
+          </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
             {successStats.map((stat, index) => (
