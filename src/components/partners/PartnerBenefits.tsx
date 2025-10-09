@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { TrendingUp, Users, Clock, BarChart3 } from "lucide-react";
-import analyticsDashboardBg from "@/assets/analytics-dashboard-bg.jpg";
 
 const benefits = [
   {
@@ -50,16 +49,7 @@ const PartnerBenefits = () => {
               className="group hover:shadow-2xl transition-all duration-500 border-2 border-primary/10 hover:border-primary/30 bg-card hover:scale-[1.02] animate-fade-in overflow-hidden"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <CardContent 
-                className="p-8 relative"
-                style={index === 3 ? {
-                  backgroundImage: `url(${analyticsDashboardBg})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundBlendMode: 'overlay'
-                } : {}}
-              >
-                {index === 3 && <div className="absolute inset-0 bg-card/70" />}
+              <CardContent className="p-8 relative">
                 <div className="space-y-6 relative z-10">
                   <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${benefit.gradient} p-5 text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg`}>
                     {benefit.icon}
