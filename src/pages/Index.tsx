@@ -109,18 +109,6 @@ const Index = () => {
                     <Zap className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mr-2 sm:mr-3 md:mr-4" aria-hidden="true" />
                     АКТИВИРОВАТЬ БЕЗЛИМИТ СЕЙЧАС
                   </Button>
-
-                  <div className="text-primary-foreground/80 space-y-2 text-sm sm:text-base">
-                    <p className="font-semibold">
-                      <span aria-hidden="true">🎯</span> Активация за 60 секунд
-                    </p>
-                    <p className="font-semibold">
-                      <span aria-hidden="true">💳</span> Безопасная оплата через Kaspi Pay
-                    </p>
-                    <p className="font-semibold">
-                      <span aria-hidden="true">🛡️</span> Гарантия возврата денег 30 дней
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
