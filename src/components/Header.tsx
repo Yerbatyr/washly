@@ -157,43 +157,6 @@ const Header = () => {
           </div>
         </DialogContent>
       </Dialog>
-
-      {/* Urgency Bar */}
-      {isPartnersPage ? (
-        <div className="bg-destructive text-destructive-foreground py-2 overflow-hidden relative" role="alert">
-          <div className="flex animate-scroll-banner whitespace-nowrap">
-            {/* First set */}
-            {partnerMessages.map((message, index) => (
-              <span key={`first-${index}`} className="inline-flex items-center px-8 text-sm font-bold">
-                {message}
-              </span>
-            ))}
-            {/* Duplicate for seamless loop */}
-            {partnerMessages.map((message, index) => (
-              <span key={`second-${index}`} className="inline-flex items-center px-8 text-sm font-bold">
-                {message}
-              </span>
-            ))}
-          </div>
-        </div>
-      ) : (
-        <div className="bg-destructive text-destructive-foreground py-2 overflow-hidden relative" role="alert">
-          <div className="flex animate-scroll-banner whitespace-nowrap">
-            {/* First set */}
-            {clientMessages.map((message, index) => (
-              <span key={`first-${index}`} className="inline-flex items-center px-8 text-sm font-bold">
-                {message}
-              </span>
-            ))}
-            {/* Duplicate for seamless loop */}
-            {clientMessages.map((message, index) => (
-              <span key={`second-${index}`} className="inline-flex items-center px-8 text-sm font-bold">
-                {message}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
     </header>
   );
 };
