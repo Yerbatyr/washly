@@ -35,15 +35,13 @@ const HeroSection = () => {
           
           {/* Main Headline - Problem Focused */}
           <h1 id="hero-heading" className="text-5xl lg:text-7xl font-black mb-8 leading-[0.9] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,1)]">
-            Как мыть машину 
-            <span className="bg-gradient-to-r from-green-500 via-green-300 to-green-500 bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] block drop-shadow-[0_4px_20px_rgba(0,0,0,1)]">БЕЗЛИМИТНО</span>
-            за 15,000₸ в месяц
+            <span className="bg-gradient-to-r from-green-500 via-green-300 to-green-500 bg-clip-text text-transparent animate-[gradient_3s_ease-in-out_infinite] bg-[length:200%_auto] block drop-shadow-[0_4px_20px_rgba(0,0,0,1)]">БЕЗЛИМИТНАЯ МОЙКА</span>
+            всего за 15,000₸
           </h1>
           
           {/* Value Proposition */}
           <p className="text-xl lg:text-2xl text-white mb-8 font-medium max-w-3xl mx-auto drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-            Вместо того чтобы платить 2,500₸ за каждую мойку (75,000₸+ в месяц), 
-            получите <span className="font-bold drop-shadow-[0_6px_20px_rgba(0,0,0,1)] bg-gradient-to-r from-green-400 via-green-100 to-green-400 bg-clip-text text-transparent animate-[gradient_2s_ease-in-out_infinite,glow_1.5s_ease-in-out_infinite] bg-[length:200%_auto] inline-block">БЕЗЛИМИТНЫЙ</span> доступ к 50+ премиальным станциям
+            50+ станций по всему Казахстану
           </p>
 
           {/* Social Proof Numbers */}
