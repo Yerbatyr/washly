@@ -47,7 +47,7 @@ const Index = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 id="problem-heading" className="text-4xl lg:text-5xl font-black mb-8">
-                  ХВАТИТ <span className="text-destructive">ВЫБРАСЫВАТЬ</span> деньги на мойку!
+                  да <span className="text-destructive">ВЫБРАСЫВАТЬ</span> деньги на мойку!
                 </h2>
 
                 {/* Solution Intro */}
